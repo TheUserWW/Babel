@@ -1,2 +1,73 @@
 # Babel
-              Babel is a Qt application for alphabet system conversion. It supports Latin, Cyrillic, Greek, etc., with bidirectional translation and indirect conversion via Latin. Intuitive interface, ideal for language enthusiasts, students, and professionals.         
+
+## Overview
+Babel is a powerful and user-friendly Qt application designed for seamless alphabet system conversion. It supports translation between 16 different writing systems, making it an invaluable tool for language enthusiasts, students, and professionals working across multiple languages.
+
+## Features
+- **Multi-system Support**: Convert text between 16 different alphabet systems
+- **Bidirectional Translation**: Translate directly from Latin to other systems and vice versa
+- **Indirect Conversion**: Convert between non-Latin systems using Latin as an intermediate bridge
+- **Intuitive Interface**: Clean and simple UI with input/output fields and system selection dropdowns
+- **Language Support**: Available in both English and Chinese
+- **Lightweight**: Efficient implementation with minimal resource requirements
+
+## Supported Alphabet Systems
+1. Latin
+2. Cyrillic
+3. Greek
+4. Syriac
+5. Tibetan
+6. Devanagari
+7. Hebrew
+8. Phoenician
+9. Runic
+10. Old South Arabian
+11. Nabataean
+12. Hangul
+13. Kana
+14. Zhuyin
+15. Arabic
+16. Uyghur
+
+## Usage
+1. Enter text in the input field
+2. Select the source alphabet system from the dropdown menu
+3. Select the target alphabet system from the dropdown menu
+4. Click the "Convert" button to see the result
+5. For non-Latin to non-Latin conversion, the application will automatically use Latin as an intermediate step
+
+## User Interface
+The main window consists of:
+- Input text area
+- Source and target alphabet system dropdowns
+- Convert button
+- Output text area (read-only)
+- Language menu for switching between English and Chinese
+
+## Building the Application
+### Prerequisites
+- Qt 6.9.1 or later
+- MinGW 64-bit compiler (for Windows)
+- Basic knowledge of Qt development
+
+### Steps
+1. Clone or download the project repository
+2. Open `Babel.pro` in Qt Creator
+3. Select the appropriate build configuration (Debug or Release)
+4. Click the "Run" button to build and execute the application
+
+## Technical Details
+- Built with Qt 6.9.1
+- Uses QMap for storing character mappings
+- Implements internationalization (i18n) for English and Chinese
+- Supports both direct and indirect conversion between alphabet systems
+
+## Contributing
+Contributions are welcome! If you'd like to add support for additional alphabet systems or improve the application, please feel free to submit a pull request.
+
+## License
+This project is licensed under the GPL 3.0 License - see the LICENSE file for details.
+
+## Contact
+For questions, suggestions, or issues, please contact the developer at [wcx1615471430@outlook.com].
+        
