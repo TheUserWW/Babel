@@ -19,10 +19,7 @@ Babel is a powerful and user-friendly Qt application designed for seamless alpha
 5. Tibetan
 6. Devanagari
 7. Hebrew
-8. Phoenician
 9. Runic
-10. Old South Arabian
-11. Nabataean
 12. Hangul
 13. Kana
 14. Zhuyin
