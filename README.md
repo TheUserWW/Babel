@@ -3,6 +3,9 @@
 ## Overview
 Babel is a powerful and user-friendly Qt application designed for seamless alphabet system conversion. It supports translation between 16 different writing systems, making it an invaluable tool for language enthusiasts, students, and professionals working across multiple languages.
 
+## Download Link:
+https://www.softpedia.com/get/Others/Home-Education/Babel.shtml
+
 ## Features
 - **Multi-system Support**: Convert text between 16 different alphabet systems
 - **Bidirectional Translation**: Translate directly from Latin to other systems and vice versa
