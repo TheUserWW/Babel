@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML_DIZ_INFO>
+  <Web_Info>
+    <Application_Name>Babel Translator</Application_Name>
+    <Program_Version>1.0.1</Program_Version>
+    <Company_Name>TheUserWW</Company_Name>
+    <Release_Date>2024-03-20</Release_Date>
+    <Operating_Systems>Windows 10+</Operating_Systems>
+    <Distribution_File_Size>5 MB</Distribution_File_Size>
+    <Distribution_File>Babel_Setup.exe</Distribution_File>
+    <MSI_File_Version>1.0.0.0</MSI_File_Version>
+  </Web_Info>
+
+  <Contact_Info>
+    <Contact_Email>wcx1615471430@outlook.com</Contact_Email>
+    <Contact_URL>https://github.com/TheUserWW/Babel</Contact_URL>
+  </Contact_Info>
+
+  <File_Info>
+    <File_Description>Multilingual script conversion tool</File_Description>
+    <Change_Info>Initial release</Change_Info>
+    <EULA>GNU General Public License version 3.0 (GPLv3)</EULA>
+    <Keywords>translation, multilingual, converter</Keywords>
+  </File_Info>
+
+  <Expanded_Info>
+    <Full_Description>
+      Babel Translator supports bidirectional conversion between 20+ writing systems including Latin, Cyrillic, Arabic and Hebrew, featuring multilingual interface and GPLv3 open-source license.
+    </Full_Description>
+    <Supported_Languages>Chinese;English;Russian;Arabic;Spanish</Supported_Languages>
+  </Expanded_Info>
+</XML_DIZ_INFO>
