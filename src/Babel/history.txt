@@ -1,0 +1,12 @@
+More writing system are avaliable:
+        Georgian
+        Geez         
+        Thai
+        Armenian
+        Bengali
+        Kurdish
+        Pashto
+       Old Ottoman
+New Feature:
+        Tool bar that has a subbutton "Phonetic Chart" which can gives you standrd Phonetic features of some languages 
+        I'll add more thing soon.
