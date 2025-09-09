@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="fr_FR">
 <context>
@@ -11,7 +10,7 @@
     <message>
         <location filename="aboutdialog.ui" line="30"/>
         <source>本程序遵循 GPL 3.0 开源协议</source>
-        <translation>Ce programme est sous licence open source GPL 3.0</translation>
+        <translation>Ce programme suit la licence open source GPL 3.0</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="62"/>
@@ -34,7 +33,7 @@ la Free Software Foundation, soit la version 3 de la Licence, soit
 
 Ce programme est distribué dans l'espoir qu'il sera utile,
 mais SANS AUCUNE GARANTIE ; sans même la garantie implicite de
-QUALITÉ MARCHANDE ou d'ADÉQUATION À UN USAGE PARTICULIER. Voir la
+COMMERCIALISATION ou D'ADÉQUATION À UN USAGE PARTICULIER. Voir la
 Licence Publique Générale GNU pour plus de détails.
 
 Vous devriez avoir reçu une copie de la Licence Publique Générale GNU
@@ -89,11 +88,6 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <translation>Tableau phonétique</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="131"/>
-        <source>TheUserWW</source>
-        <translation>TheUserWW</translation>
-    </message>
-    <message>
         <source>Latin</source>
         <translation>Latin</translation>
     </message>
@@ -147,7 +141,7 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
     </message>
     <message>
         <source>Persian</source>
-        <translation>Persan</translation>
+        <translation>Perse</translation>
     </message>
     <message>
         <source>Khmer</source>
@@ -185,6 +179,22 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <source>Ottoman</source>
         <translation>Ottoman</translation>
     </message>
+    <message>
+        <source>Assamese</source>
+        <translation>Assamais</translation>
+    </message>
+    <message>
+        <source>Tamil</source>
+        <translation>Tamoul</translation>
+    </message>
+    <message>
+        <source>Telugu</source>
+        <translation>Télougou</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Kannada</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>
@@ -194,309 +204,130 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <translation>Tableau phonétique</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="32"/>
+        <location filename="phoneticchartdialog.ui" line="26"/>
         <source>Latin</source>
         <translation>Latin</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="42"/>
+        <location filename="phoneticchartdialog.ui" line="56"/>
         <source>Letter</source>
         <translation>Lettre</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="47"/>
+        <location filename="phoneticchartdialog.ui" line="61"/>
         <source>IPA</source>
-        <translation>IPA</translation>
+        <translation>API</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="70"/>
+        <location filename="phoneticchartdialog.ui" line="74"/>
         <source>Cyrillic</source>
         <translation>Cyrillique</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="80"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="85"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="108"/>
+        <location filename="phoneticchartdialog.ui" line="104"/>
         <source>Greek</source>
         <translation>Grec</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="118"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="123"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="146"/>
+        <location filename="phoneticchartdialog.ui" line="134"/>
         <source>Khmer</source>
         <translation>Khmer</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="156"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="161"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="184"/>
+        <location filename="phoneticchartdialog.ui" line="164"/>
         <source>Syriac</source>
         <translation>Syriaque</translation>
     </message>
     <message>
         <location filename="phoneticchartdialog.ui" line="194"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="199"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="222"/>
         <source>Tibetan</source>
         <translation>Tibétain</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="232"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="237"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="260"/>
+        <location filename="phoneticchartdialog.ui" line="224"/>
         <source>Devanagari</source>
         <translation>Devanagari</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="270"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="275"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="298"/>
+        <location filename="phoneticchartdialog.ui" line="254"/>
         <source>Hebrew</source>
         <translation>Hébreu</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="308"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="313"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="336"/>
+        <location filename="phoneticchartdialog.ui" line="284"/>
         <source>Runic</source>
         <translation>Runique</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="346"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="351"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="374"/>
+        <location filename="phoneticchartdialog.ui" line="314"/>
         <source>Hangul</source>
         <translation>Hangul</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="384"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="389"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="412"/>
+        <location filename="phoneticchartdialog.ui" line="344"/>
         <source>Kana</source>
         <translation>Kana</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="422"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="427"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="450"/>
+        <location filename="phoneticchartdialog.ui" line="374"/>
         <source>Zhuyin</source>
         <translation>Zhuyin</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="460"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="465"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="488"/>
+        <location filename="phoneticchartdialog.ui" line="404"/>
         <source>Arabic</source>
         <translation>Arabe</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="498"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="503"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="526"/>
+        <location filename="phoneticchartdialog.ui" line="434"/>
         <source>Uyghur</source>
         <translation>Ouïghour</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="536"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="541"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="564"/>
+        <location filename="phoneticchartdialog.ui" line="464"/>
         <source>Persian</source>
-        <translation>Persan</translation>
+        <translation>Perse</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="574"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="579"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="602"/>
+        <location filename="phoneticchartdialog.ui" line="494"/>
         <source>Georgian</source>
         <translation>Géorgien</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="612"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="617"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="640"/>
+        <location filename="phoneticchartdialog.ui" line="524"/>
         <source>Geez</source>
         <translation>Guèze</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="650"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="655"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="678"/>
+        <location filename="phoneticchartdialog.ui" line="554"/>
         <source>Thai</source>
         <translation>Thaï</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="688"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="693"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="716"/>
+        <location filename="phoneticchartdialog.ui" line="584"/>
         <source>Armenian</source>
         <translation>Arménien</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="726"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="731"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="754"/>
+        <location filename="phoneticchartdialog.ui" line="614"/>
         <source>Bengali</source>
         <translation>Bengali</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="764"/>
-        <source>Letter</source>
-        <translation>Lettre</translation>
+        <source>Assamese</source>
+        <translation>Assamais</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="769"/>
-        <source>IPA</source>
-        <translation>IPA</translation>
+        <source>Tamil</source>
+        <translation>Tamoul</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.cpp" line="18"/>
-        <source>Phonetic Chart</source>
-        <translation>Tableau phonétique</translation>
+        <source>Telugu</source>
+        <translation>Télougou</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Kannada</translation>
     </message>
 </context>
 </TS>

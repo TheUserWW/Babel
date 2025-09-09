@@ -179,6 +179,22 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</tr
         <source>Zhuyin</source>
         <translation>Zhuyin</translation>
     </message>
+    <message>
+        <source>Assamese</source>
+        <translation>Assamese</translation>
+    </message>
+    <message>
+        <source>Tamil</source>
+        <translation>Tamil</translation>
+    </message>
+    <message>
+        <source>Telugu</source>
+        <translation>Telugu</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Kannada</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>
@@ -296,6 +312,22 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</tr
         <location filename="phoneticchartdialog.ui" line="614"/>
         <source>Bengali</source>
         <translation>Bengali</translation>
+    </message>
+    <message>
+        <source>Assamese</source>
+        <translation>Assamese</translation>
+    </message>
+    <message>
+        <source>Tamil</source>
+        <translation>Tamil</translation>
+    </message>
+    <message>
+        <source>Telugu</source>
+        <translation>Telugu</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Kannada</translation>
     </message>
 </context>
 </TS>

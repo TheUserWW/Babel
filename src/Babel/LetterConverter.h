@@ -2,7 +2,7 @@
 #define LETTERCONVERTER_H
 
 #include <QObject>
-#include <QMap>
+#include <QHash>  // 将QMap替换为QHash
 #include <QString>
 #include <windows.h>
 #include <imm.h>
@@ -36,7 +36,11 @@ public:
         Bengali,    // 孟加拉字母
         Kurdish,    // 库尔德文
         Pashto,     // 普什图文
-        Ottoman,    // 新增：奥斯曼土耳其文
+        Ottoman,    // 奥斯曼土耳其文
+        Tamil,      // 泰米尔文
+        Telugu,     // 泰卢固文
+        Kannada,    // 卡纳达文
+        Assamese,   // 阿萨姆文
     };
     Q_ENUM(AlphabetSystem)
 
@@ -55,59 +59,66 @@ public:
     QString convertToKana(const QString &text);
     QString convertFromKana(const QString &text);
     QString convertText(const QString &text, AlphabetSystem system, ConversionDirection direction = LatinToTarget);
-    QString convertWithMap(const QString &text, const QMap<QString, QString> &map);
+    QString convertWithMap(const QString &text, const QHash<QString, QString> &map);  // 修改参数类型为QHash
 
 private:
     void initializeMaps();
 
     // 正向映射
-    QMap<QString, QString> latinToCyrillic;
-    QMap<QString, QString> latinToGreek;
-    QMap<QString, QString> latinToKhmer;
-    QMap<QString, QString> latinToSyriac;
-    QMap<QString, QString> latinToTibetan;
-    QMap<QString, QString> latinToDevanagari;
-    QMap<QString, QString> latinToHebrew;
-    QMap<QString, QString> latinToRunic;
-    QMap<QString, QString> latinToHangul;
-    QMap<QString, QString> latinToKana;
-    QMap<QString, QString> latinToZhuyin;
-    QMap<QString, QString> latinToArabic;
-    QMap<QString, QString> latinToUyghur;
-    QMap<QString, QString> latinToPersian;
-    QMap<QString, QString> latinToGeorgian;
-    QMap<QString, QString> latinToGeez;  // 新增：吉兹字母正向映射
-    QMap<QString, QString> latinToThai;  // 新增：泰文正向映射
-    QMap<QString, QString> latinToArmenian;  // 新增：亚美尼亚字母正向映射
-    QMap<QString, QString> latinToBengali;  // 新增：孟加拉字母正向映射
-    QMap<QString, QString> latinToKurdish;  // 新增：库尔德文正向映射
-    QMap<QString, QString> latinToPashto;  // 新增：普什图文正向映射
-    QMap<QString, QString> latinToOttoman;  // 新增：奥斯曼土耳其文正向映射
-    
+    QHash<QString, QString> latinToCyrillic;  // 将QMap替换为QHash
+    QHash<QString, QString> latinToGreek;
+    QHash<QString, QString> latinToKhmer;
+    QHash<QString, QString> latinToSyriac;
+    QHash<QString, QString> latinToTibetan;
+    QHash<QString, QString> latinToDevanagari;
+    QHash<QString, QString> latinToHebrew;
+    QHash<QString, QString> latinToRunic;
+    QHash<QString, QString> latinToHangul;
+    QHash<QString, QString> latinToKana;
+    QHash<QString, QString> latinToZhuyin;
+    QHash<QString, QString> latinToArabic;
+    QHash<QString, QString> latinToUyghur;
+    QHash<QString, QString> latinToPersian;
+    QHash<QString, QString> latinToGeorgian;
+    QHash<QString, QString> latinToGeez;
+    QHash<QString, QString> latinToThai;
+    QHash<QString, QString> latinToArmenian;
+    QHash<QString, QString> latinToBengali;
+    QHash<QString, QString> latinToKurdish;
+    QHash<QString, QString> latinToPashto;
+    QHash<QString, QString> latinToOttoman;
+    QHash<QString, QString> latinToTamil;  // 新增：泰米尔文正向映射
+    QHash<QString, QString> latinToTelugu;  // 新增：泰卢固文正向映射
+    QHash<QString, QString> latinToKannada;  // 新增：卡纳达文正向映射
+    QHash<QString, QString> latinToAssamese;  // 新增：阿萨姆文正向映射
+
     // 反向映射
-    QMap<QString, QString> pashtoToLatin;
-    QMap<QString, QString> cyrillicToLatin;
-    QMap<QString, QString> greekToLatin;
-    QMap<QString, QString> khmerToLatin;
-    QMap<QString, QString> syriacToLatin;
-    QMap<QString, QString> tibetanToLatin;
-    QMap<QString, QString> devanagariToLatin;
-    QMap<QString, QString> hebrewToLatin;
-    QMap<QString, QString> runicToLatin;
-    QMap<QString, QString> hangulToLatin;
-    QMap<QString, QString> kanaToLatin;
-    QMap<QString, QString> zhuyinToLatin;
-    QMap<QString, QString> arabicToLatin;
-    QMap<QString, QString> uyghurToLatin;
-    QMap<QString, QString> persianToLatin;
-    QMap<QString, QString> georgianToLatin;
-    QMap<QString, QString> geezToLatin;  // 新增：吉兹字母反向映射
-    QMap<QString, QString> thaiToLatin;  // 新增：泰文反向映射
-    QMap<QString, QString> armenianToLatin;  // 新增：亚美尼亚字母反向映射
-    QMap<QString, QString> bengaliToLatin;  // 新增：孟加拉字母反向映射
-    QMap<QString, QString> kurdishToLatin;  // 新增：库尔德文反向映射
-    QMap<QString, QString> ottomanToLatin;
+    QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
+    QHash<QString, QString> cyrillicToLatin;
+    QHash<QString, QString> greekToLatin;
+    QHash<QString, QString> khmerToLatin;
+    QHash<QString, QString> syriacToLatin;
+    QHash<QString, QString> tibetanToLatin;
+    QHash<QString, QString> devanagariToLatin;
+    QHash<QString, QString> hebrewToLatin;
+    QHash<QString, QString> runicToLatin;
+    QHash<QString, QString> hangulToLatin;
+    QHash<QString, QString> kanaToLatin;
+    QHash<QString, QString> zhuyinToLatin;
+    QHash<QString, QString> arabicToLatin;
+    QHash<QString, QString> uyghurToLatin;
+    QHash<QString, QString> persianToLatin;
+    QHash<QString, QString> georgianToLatin;
+    QHash<QString, QString> geezToLatin;
+    QHash<QString, QString> thaiToLatin;
+    QHash<QString, QString> armenianToLatin;
+    QHash<QString, QString> bengaliToLatin;
+    QHash<QString, QString> kurdishToLatin;
+    QHash<QString, QString> ottomanToLatin;
+    QHash<QString, QString> tamilToLatin;  // 新增：泰米尔文反向映射
+    QHash<QString, QString> teluguToLatin;  // 新增：泰卢固文反向映射
+    QHash<QString, QString> kannadaToLatin;  // 新增：卡纳达文反向映射
+    QHash<QString, QString> assameseToLatin;  // 新增：阿萨姆文反向映射
 };
 
 #endif // LETTERCONVERTER_H
-

@@ -5,12 +5,12 @@
     <message>
         <location filename="aboutdialog.ui" line="14"/>
         <source>关于 MemoryCleaner</source>
-        <translation>О программе Babel</translation>
+        <translation>О Babel</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="30"/>
         <source>本程序遵循 GPL 3.0 开源协议</source>
-        <translation>Эта программа распространяется под лицензией GPL 3.0</translation>
+        <translation>Эта программа следует лицензии открытого исходного кода GPL 3.0</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="62"/>
@@ -26,11 +26,18 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</source>
-        <translation>Эта программа является свободным программным обеспечением: вы можете распространять и/или изменять её в соответствии с условиями GNU General Public License, опубликованной Free Software Foundation, версии 3 или (на ваше усмотрение) любой более поздней версии.
+        <translation>Эта программа является бесплатным программным обеспечением: вы можете распространять и/или изменять ее
+в соответствии с условиями Стандартной общественной лицензии GNU, опубликованной
+Фондом свободного программного обеспечения, либо версии 3 Лицензии, либо
+(по вашему выбору) любой более поздней версии.
 
-Эта программа распространяется в надежде, что она будет полезной, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемой гарантии ТОВАРНОГО ВИДА или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННЫХ ЦЕЛЕЙ. Подробнее см. в GNU General Public License.
+Эта программа распространяется в надежде, что она будет полезной,
+но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемой гарантии
+ТОВАРНОЙ ПРИГОДНОСТИ или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННОЙ ЦЕЛИ. Подробнее см.
+в Стандартной общественной лицензии GNU.
 
-Вы должны были получить копию GNU General Public License вместе с этой программой. Если это не так, см. &lt;https://www.gnu.org/licenses/&gt;.</translation>
+Вы должны были получить копию Стандартной общественной лицензии GNU
+вместе с этой программой. Если нет, см. &lt;https://www.gnu.org/licenses/&gt;.</translation>
     </message>
 </context>
 <context>
@@ -43,7 +50,7 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <location filename="mainwindow.ui" line="44"/>
         <source>Convert from:</source>
-        <translation>Из:</translation>
+        <translation>Преобразовать из:</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="56"/>
@@ -53,7 +60,7 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <location filename="mainwindow.ui" line="81"/>
         <source>Convert</source>
-        <translation>Конвертировать</translation>
+        <translation>Преобразовать</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="89"/>
@@ -81,11 +88,6 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <translation>Фонетическая таблица</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="131"/>
-        <source>TheUserWW</source>
-        <translation>TheUserWW</translation>
-    </message>
-    <message>
         <source>Latin</source>
         <translation>Латиница</translation>
     </message>
@@ -95,27 +97,75 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     </message>
     <message>
         <source>Greek</source>
-        <translation>Греческий алфавит</translation>
+        <translation>Греческий</translation>
     </message>
     <message>
-        <source>Syriac</source>
-        <translation>Сирийское письмо</translation>
+        <source>Georgian</source>
+        <translation>Грузинский</translation>
+    </message>
+    <message>
+        <source>Runic</source>
+        <translation>Рунический</translation>
+    </message>
+    <message>
+        <source>Armenian</source>
+        <translation>Армянский</translation>
     </message>
     <message>
         <source>Tibetan</source>
-        <translation>Тибетское письмо</translation>
+        <translation>Тибетский</translation>
     </message>
     <message>
         <source>Devanagari</source>
         <translation>Деванагари</translation>
     </message>
     <message>
+        <source>Bengali</source>
+        <translation>Бенгальский</translation>
+    </message>
+    <message>
+        <source>Thai</source>
+        <translation>Тайский</translation>
+    </message>
+    <message>
+        <source>Khmer</source>
+        <translation>Кхмерский</translation>
+    </message>
+    <message>
+        <source>Syriac</source>
+        <translation>Сирийский</translation>
+    </message>
+    <message>
+        <source>Arabic</source>
+        <translation>Арабский</translation>
+    </message>
+    <message>
+        <source>Uyghur</source>
+        <translation>Уйгурский</translation>
+    </message>
+    <message>
+        <source>Persian</source>
+        <translation>Персидский</translation>
+    </message>
+    <message>
+        <source>Kurdish</source>
+        <translation>Курдский</translation>
+    </message>
+    <message>
+        <source>Pashto</source>
+        <translation>Пушту</translation>
+    </message>
+    <message>
+        <source>Ottoman</source>
+        <translation>Османский</translation>
+    </message>
+    <message>
         <source>Hebrew</source>
         <translation>Иврит</translation>
     </message>
     <message>
-        <source>Runic</source>
-        <translation>Руны</translation>
+        <source>Geez</source>
+        <translation>Геэз</translation>
     </message>
     <message>
         <source>Hangul</source>
@@ -130,52 +180,20 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <translation>Чжуинь</translation>
     </message>
     <message>
-        <source>Arabic</source>
-        <translation>Арабское письмо</translation>
+        <source>Assamese</source>
+        <translation>Ассамский</translation>
     </message>
     <message>
-        <source>Uyghur</source>
-        <translation>Уйгурский алфавит</translation>
+        <source>Tamil</source>
+        <translation>Тамильский</translation>
     </message>
     <message>
-        <source>Persian</source>
-        <translation>Персидский алфавит</translation>
+        <source>Telugu</source>
+        <translation>Телугу</translation>
     </message>
     <message>
-        <source>Khmer</source>
-        <translation>Кхмерское письмо</translation>
-    </message>
-    <message>
-        <source>Georgian</source>
-        <translation>Грузинский алфавит</translation>
-    </message>
-    <message>
-        <source>Armenian</source>
-        <translation>Армянский алфавит</translation>
-    </message>
-    <message>
-        <source>Bengali</source>
-        <translation>Бенгальский алфавит</translation>
-    </message>
-    <message>
-        <source>Thai</source>
-        <translation>Тайский алфавит</translation>
-    </message>
-    <message>
-        <source>Geez</source>
-        <translation>Эфиопское письмо</translation>
-    </message>
-    <message>
-        <source>Kurdish</source>
-        <translation>Курдский алфавит</translation>
-    </message>
-    <message>
-        <source>Pashto</source>
-        <translation>Пуштунский алфавит</translation>
-    </message>
-    <message>
-        <source>Ottoman</source>
-        <translation>Османский алфавит</translation>
+        <source>Kannada</source>
+        <translation>Каннада</translation>
     </message>
 </context>
 <context>
@@ -186,304 +204,130 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <translation>Фонетическая таблица</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="32"/>
+        <location filename="phoneticchartdialog.ui" line="26"/>
         <source>Latin</source>
         <translation>Латиница</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="42"/>
+        <location filename="phoneticchartdialog.ui" line="56"/>
         <source>Letter</source>
         <translation>Буква</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="47"/>
+        <location filename="phoneticchartdialog.ui" line="61"/>
         <source>IPA</source>
         <translation>МФА</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="66"/>
+        <location filename="phoneticchartdialog.ui" line="74"/>
         <source>Cyrillic</source>
         <translation>Кириллица</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="76"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="81"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="100"/>
+        <location filename="phoneticchartdialog.ui" line="104"/>
         <source>Greek</source>
-        <translation>Греческий алфавит</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="110"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="115"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
+        <translation>Греческий</translation>
     </message>
     <message>
         <location filename="phoneticchartdialog.ui" line="134"/>
         <source>Khmer</source>
-        <translation>Кхмерское письмо</translation>
+        <translation>Кхмерский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="144"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="149"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="168"/>
+        <location filename="phoneticchartdialog.ui" line="164"/>
         <source>Syriac</source>
-        <translation>Сирийское письмо</translation>
+        <translation>Сирийский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="178"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="183"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="202"/>
+        <location filename="phoneticchartdialog.ui" line="194"/>
         <source>Tibetan</source>
-        <translation>Тибетское письмо</translation>
+        <translation>Тибетский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="212"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="217"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="236"/>
+        <location filename="phoneticchartdialog.ui" line="224"/>
         <source>Devanagari</source>
         <translation>Деванагари</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="246"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="251"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="270"/>
+        <location filename="phoneticchartdialog.ui" line="254"/>
         <source>Hebrew</source>
         <translation>Иврит</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="280"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="285"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="304"/>
+        <location filename="phoneticchartdialog.ui" line="284"/>
         <source>Runic</source>
-        <translation>Руны</translation>
+        <translation>Рунический</translation>
     </message>
     <message>
         <location filename="phoneticchartdialog.ui" line="314"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="319"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="338"/>
         <source>Hangul</source>
         <translation>Хангыль</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="348"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="353"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="372"/>
+        <location filename="phoneticchartdialog.ui" line="344"/>
         <source>Kana</source>
         <translation>Кана</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="382"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="387"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="406"/>
+        <location filename="phoneticchartdialog.ui" line="374"/>
         <source>Zhuyin</source>
         <translation>Чжуинь</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="416"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="421"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="440"/>
+        <location filename="phoneticchartdialog.ui" line="404"/>
         <source>Arabic</source>
-        <translation>Арабское письмо</translation>
+        <translation>Арабский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="450"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="455"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="474"/>
+        <location filename="phoneticchartdialog.ui" line="434"/>
         <source>Uyghur</source>
-        <translation>Уйгурский алфавит</translation>
+        <translation>Уйгурский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="484"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="489"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="508"/>
+        <location filename="phoneticchartdialog.ui" line="464"/>
         <source>Persian</source>
-        <translation>Персидский алфавит</translation>
+        <translation>Персидский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="518"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="523"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="542"/>
+        <location filename="phoneticchartdialog.ui" line="494"/>
         <source>Georgian</source>
-        <translation>Грузинский алфавит</translation>
+        <translation>Грузинский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="552"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="557"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="576"/>
+        <location filename="phoneticchartdialog.ui" line="524"/>
         <source>Geez</source>
-        <translation>Эфиопское письмо</translation>
+        <translation>Геэз</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="586"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="591"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="610"/>
+        <location filename="phoneticchartdialog.ui" line="554"/>
         <source>Thai</source>
-        <translation>Тайский алфавит</translation>
+        <translation>Тайский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="620"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="625"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="644"/>
+        <location filename="phoneticchartdialog.ui" line="584"/>
         <source>Armenian</source>
-        <translation>Армянский алфавит</translation>
+        <translation>Армянский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="654"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="659"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
-    </message>
-    <message>
-        <location filename="phoneticchartdialog.ui" line="678"/>
+        <location filename="phoneticchartdialog.ui" line="614"/>
         <source>Bengali</source>
-        <translation>Бенгальский алфавит</translation>
+        <translation>Бенгальский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="688"/>
-        <source>Letter</source>
-        <translation>Буква</translation>
+        <source>Assamese</source>
+        <translation>Ассамский</translation>
     </message>
     <message>
-        <location filename="phoneticchartdialog.ui" line="693"/>
-        <source>IPA</source>
-        <translation>МФА</translation>
+        <source>Tamil</source>
+        <translation>Тамильский</translation>
+    </message>
+    <message>
+        <source>Telugu</source>
+        <translation>Телугу</translation>
+    </message>
+    <message>
+        <source>Kannada</source>
+        <translation>Каннада</translation>
     </message>
 </context>
 </TS>

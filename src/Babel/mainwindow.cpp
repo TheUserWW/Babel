@@ -83,23 +83,27 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Latin"), LetterConverter::Latin);
     ui->sourceComboBox->addItem(tr("Cyrillic"), LetterConverter::Cyrillic);
     ui->sourceComboBox->addItem(tr("Greek"), LetterConverter::Greek);
-    ui->sourceComboBox->addItem(tr("Georgian"), LetterConverter::Georgian); //新增格鲁吉亚文
+    ui->sourceComboBox->addItem(tr("Georgian"), LetterConverter::Georgian);
     ui->sourceComboBox->addItem(tr("Runic"), LetterConverter::Runic);
-    ui->sourceComboBox->addItem(tr("Armenian"), LetterConverter::Armenian); // 新增：亚美尼亚字母
+    ui->sourceComboBox->addItem(tr("Armenian"), LetterConverter::Armenian); 
     ui->sourceComboBox->addItem(tr("Tibetan"), LetterConverter::Tibetan);
     ui->sourceComboBox->addItem(tr("Devanagari"), LetterConverter::Devanagari);
-    ui->sourceComboBox->addItem(tr("Bengali"), LetterConverter::Bengali); // 新增：孟加拉字母
-    ui->sourceComboBox->addItem(tr("Thai"), LetterConverter::Thai); // 新增：泰语字母
+    ui->sourceComboBox->addItem(tr("Bengali"), LetterConverter::Bengali);
+    ui->sourceComboBox->addItem(tr("Assamese"), LetterConverter::Assamese);
+    ui->sourceComboBox->addItem(tr("Tamil"), LetterConverter::Tamil);
+    ui->sourceComboBox->addItem(tr("Telugu"), LetterConverter::Telugu);
+    ui->sourceComboBox->addItem(tr("Kannada"), LetterConverter::Kannada);
+    ui->sourceComboBox->addItem(tr("Thai"), LetterConverter::Thai);
     ui->sourceComboBox->addItem(tr("Khmer"), LetterConverter::Khmer);
     ui->sourceComboBox->addItem(tr("Syriac"), LetterConverter::Syriac);
     ui->sourceComboBox->addItem(tr("Arabic"), LetterConverter::Arabic);
     ui->sourceComboBox->addItem(tr("Uyghur"), LetterConverter::Uyghur);
     ui->sourceComboBox->addItem(tr("Persian"), LetterConverter::Persian);
-    ui->sourceComboBox->addItem(tr("Kurdish"), LetterConverter::Kurdish); // 新增：库尔德文
-    ui->sourceComboBox->addItem(tr("Pashto"), LetterConverter::Pashto); // 新增：普什图文
-    ui->sourceComboBox->addItem(tr("Ottoman"), LetterConverter::Ottoman); // 新增：奥斯曼文
+    ui->sourceComboBox->addItem(tr("Kurdish"), LetterConverter::Kurdish); 
+    ui->sourceComboBox->addItem(tr("Pashto"), LetterConverter::Pashto); 
+    ui->sourceComboBox->addItem(tr("Ottoman"), LetterConverter::Ottoman); 
     ui->sourceComboBox->addItem(tr("Hebrew"), LetterConverter::Hebrew);
-    ui->sourceComboBox->addItem(tr("Geez"), LetterConverter::Geez); // 新增：吉兹字母
+    ui->sourceComboBox->addItem(tr("Geez"), LetterConverter::Geez); 
     ui->sourceComboBox->addItem(tr("Hangul"), LetterConverter::Hangul);
     ui->sourceComboBox->addItem(tr("Kana"), LetterConverter::Kana);
     ui->sourceComboBox->addItem(tr("Zhuyin"), LetterConverter::Zhuyin);
