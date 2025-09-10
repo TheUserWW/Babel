@@ -79,49 +79,6 @@ void LetterConverter::initializeMaps()
     latinToCyrillic["Ö"] = QString(QChar(0x041E)) + QString(QChar(0x0308)); // Ӧ
     latinToCyrillic["Ü"] = QString(QChar(0x0423)) + QString(QChar(0x0308)); // Ӱ
     latinToCyrillic["ß"] = QString(QChar(0x0421)) + QString(QChar(0x0421)); // СС (近似)
-    // 西里尔字母小写到拉丁字母的映射
-    cyrillicToLatin[QString(QChar(0x0430))] = "a"; // а
-    cyrillicToLatin[QString(QChar(0x0431))] = "b"; // б
-    cyrillicToLatin[QString(QChar(0x0432))] = "v"; // в
-    cyrillicToLatin[QString(QChar(0x0433))] = "g"; // г
-    cyrillicToLatin[QString(QChar(0x0434))] = "d"; // д
-    cyrillicToLatin[QString(QChar(0x0435))] = "e"; // е
-    cyrillicToLatin[QString(QChar(0x0451))] = "yo"; // ё
-    cyrillicToLatin[QString(QChar(0x0436))] = "zh"; // ж
-    cyrillicToLatin[QString(QChar(0x0437))] = "z"; // з
-    cyrillicToLatin[QString(QChar(0x0438))] = "i"; // и
-    cyrillicToLatin[QString(QChar(0x0439))] = "y"; // й
-    cyrillicToLatin[QString(QChar(0x043A))] = "k"; // к
-    cyrillicToLatin[QString(QChar(0x043B))] = "l"; // л
-    cyrillicToLatin[QString(QChar(0x043C))] = "m"; // м
-    cyrillicToLatin[QString(QChar(0x043D))] = "n"; // н
-    cyrillicToLatin[QString(QChar(0x043E))] = "o"; // о
-    cyrillicToLatin[QString(QChar(0x043F))] = "p"; // п
-    cyrillicToLatin[QString(QChar(0x0440))] = "r"; // р
-    cyrillicToLatin[QString(QChar(0x0441))] = "s"; // с
-    cyrillicToLatin[QString(QChar(0x0442))] = "t"; // т
-    cyrillicToLatin[QString(QChar(0x0443))] = "u"; // у
-    cyrillicToLatin[QString(QChar(0x0444))] = "f"; // ф
-    cyrillicToLatin[QString(QChar(0x0445))] = "kh"; // х
-    cyrillicToLatin[QString(QChar(0x0446))] = "ts"; // ц
-    cyrillicToLatin[QString(QChar(0x0447))] = "ch"; // ч
-    cyrillicToLatin[QString(QChar(0x0448))] = "sh"; // ш
-    cyrillicToLatin[QString(QChar(0x0449))] = "sch"; // щ
-    cyrillicToLatin[QString(QChar(0x044A))] = "'"; // ъ
-    cyrillicToLatin[QString(QChar(0x044B))] = "y"; // ы
-    cyrillicToLatin[QString(QChar(0x044C))] = "'"; // ь
-    cyrillicToLatin[QString(QChar(0x044D))] = "e"; // э
-    cyrillicToLatin[QString(QChar(0x044E))] = "yu"; // ю
-    cyrillicToLatin[QString(QChar(0x044F))] = "ya"; // я
-    cyrillicToLatin[QString(QChar(0x0454))] = "ye"; // є
-    cyrillicToLatin[QString(QChar(0x0456))] = "i"; // і
-    cyrillicToLatin[QString(QChar(0x0457))] = "yi"; // ї
-    cyrillicToLatin[QString(QChar(0x0491))] = "g"; // ґ
-    cyrillicToLatin[QString(QChar(0x045E))] = "u"; // ў
-    cyrillicToLatin[QString(QChar(0x0436)) + QString(QChar(0x043A))] = "dz"; // дз
-    cyrillicToLatin[QString(QChar(0x0414)) + QString(QChar(0x0416))] = "dzh"; // дж
-    cyrillicToLatin[QString(QChar(0x041D)) + QString(QChar(0x0436))] = "nj"; // њ
-    cyrillicToLatin[QString(QChar(0x041B)) + QString(QChar(0x0436))] = "lj"; // љ
 
 
 
@@ -1142,8 +1099,8 @@ void LetterConverter::initializeMaps()
     latinToTelugu["S"] = QString(QChar(0x0C38)); // స
     latinToTelugu["T"] = QString(QChar(0x0C1F)); // ట
     latinToTelugu["U"] = QString(QChar(0x0C09)); // ఉ
-    latinToTelugu["V"] = QString(QChar(0xC35)); // వ
-    latinToTelugu["W"] = QString(QChar(0xC35)); // వ (近似)
+    latinToTelugu["V"] = QString(QChar(0x0C35)); // వ
+    latinToTelugu["W"] = QString(QChar(0x0C35)); // వ (近似)
     latinToTelugu["X"] = QString(QChar(0x0C15)); // క (近似)
     latinToTelugu["Y"] = QString(QChar(0x0C2F)); // య
     latinToTelugu["Z"] = QString(QChar(0x0C1C)); // జ (近似)
@@ -1262,6 +1219,485 @@ void LetterConverter::initializeMaps()
     latinToAssamese["NN"] = QString(QChar(0x09A3)); // ণ
     latinToAssamese["SHH"] = QString(QChar(0x09B6)); // শ
     
+    //-------------------------------------
+    //回鹘蒙文
+    //-------------------------------------
+    latinToOldUyghur["A"] = QString(QChar(0x1820)); // ᠠ
+    latinToOldUyghur["B"] = QString(QChar(0x182A)); // ᠪ
+    latinToOldUyghur["C"] = QString(QChar(0x1834)); // ᠴ
+    latinToOldUyghur["D"] = QString(QChar(0x1833)); // ᠳ
+    latinToOldUyghur["E"] = QString(QChar(0x1868)); // ᡨ
+    latinToOldUyghur["F"] = QString(QChar(0x1876)); // ᡶ
+    latinToOldUyghur["G"] = QString(QChar(0x1860)); // ᡠ
+    latinToOldUyghur["H"] = QString(QChar(0x1865)); // ᡥ
+    latinToOldUyghur["I"] = QString(QChar(0x1822)); // ᠢ
+    latinToOldUyghur["J"] = QString(QChar(0x1835)); // ᠵ
+    latinToOldUyghur["K"] = QString(QChar(0x182F)); // ᠯ
+    latinToOldUyghur["L"] = QString(QChar(0x182F)); // ᠯ
+    latinToOldUyghur["M"] = QString(QChar(0x182E)); // ᠮ
+    latinToOldUyghur["N"] = QString(QChar(0x1828)); // ᠨ
+    latinToOldUyghur["O"] = QString(QChar(0x1823)); // ᠣ
+    latinToOldUyghur["P"] = QString(QChar(0x1866)); // ᡦ
+    latinToOldUyghur["Q"] = QString(QChar(0x184C)); // ᡌ
+    latinToOldUyghur["R"] = QString(QChar(0x1837)); // ᠷ
+    latinToOldUyghur["S"] = QString(QChar(0x1830)); // ᠰ
+    latinToOldUyghur["T"] = QString(QChar(0x1831)); // ᠱ
+    latinToOldUyghur["U"] = QString(QChar(0x1864)); // ᡤ
+    latinToOldUyghur["V"] = QString(QChar(0x1861)); // ᡡ
+    latinToOldUyghur["W"] = QString(QChar(0x186D)); // ᡭ
+    latinToOldUyghur["X"] = QString(QChar(0x184D)); // ᡍ
+    latinToOldUyghur["Y"] = QString(QChar(0x1836)); // ᠶ
+    latinToOldUyghur["Z"] = QString(QChar(0x1839)); // ᠹ
+    latinToOldUyghur["CH"] = QString(QChar(0x1834)); // ᠴ
+    latinToOldUyghur["SH"] = QString(QChar(0x1830)); // ᠰ
+    latinToOldUyghur["ZH"] = QString(QChar(0x1839)); // ᠹ
+    latinToOldUyghur["KH"] = QString(QChar(0x184D)); // ᡍ
+    latinToOldUyghur["GH"] = QString(QChar(0x1860)); // ᡠ
+    latinToOldUyghur["NG"] = QString(QChar(0x1828)); // ᠨ
+    latinToOldUyghur["TS"] = QString(QChar(0x1831)); // ᠱ
+    latinToOldUyghur["DZ"] = QString(QChar(0x1833)); // ᠳ
+    latinToOldUyghur["AA"] = QString(QChar(0x1820)); // ᠠ
+    latinToOldUyghur["EE"] = QString(QChar(0x1868)); // ᡨ
+    latinToOldUyghur["II"] = QString(QChar(0x1822)); // ᠢ
+    latinToOldUyghur["OO"] = QString(QChar(0x1823)); // ᠣ
+    latinToOldUyghur["UU"] = QString(QChar(0x1864)); // ᡤ
+
+
+    //-------------------------------------
+    // 满文映射表
+    //-------------------------------------
+    latinToManchu["A"] = QString(QChar(0x1820)); // ᠠ
+    latinToManchu["B"] = QString(QChar(0x182A)); // ᠪ
+    latinToManchu["C"] = QString(QChar(0x1834)); // ᠴ
+    latinToManchu["D"] = QString(QChar(0x1833)); // ᠳ
+    latinToManchu["E"] = QString(QChar(0x1868)); // ᡨ
+    latinToManchu["F"] = QString(QChar(0x1876)); // ᡶ
+    latinToManchu["G"] = QString(QChar(0x1860)); // ᡠ
+    latinToManchu["H"] = QString(QChar(0x1865)); // ᡥ
+    latinToManchu["I"] = QString(QChar(0x1822)); // ᠢ
+    latinToManchu["J"] = QString(QChar(0x1835)); // ᠵ
+    latinToManchu["K"] = QString(QChar(0x1874)); // ᡴ
+    latinToManchu["L"] = QString(QChar(0x182F)); // ᠯ
+    latinToManchu["M"] = QString(QChar(0x182E)); // ᠮ
+    latinToManchu["N"] = QString(QChar(0x1828)); // ᠨ
+    latinToManchu["O"] = QString(QChar(0x1823)); // ᠣ
+    latinToManchu["P"] = QString(QChar(0x1866)); // ᡦ
+    latinToManchu["Q"] = QString(QChar(0x184C)); // ᡌ
+    latinToManchu["R"] = QString(QChar(0x1837)); // ᠷ
+    latinToManchu["S"] = QString(QChar(0x1830)); // ᠰ
+    latinToManchu["T"] = QString(QChar(0x1867)); // ᡧ
+    latinToManchu["U"] = QString(QChar(0x1864)); // ᡤ
+    latinToManchu["V"] = QString(QChar(0x1861)); // ᡡ
+    latinToManchu["W"] = QString(QChar(0x186D)); // ᡭ
+    latinToManchu["X"] = QString(QChar(0x184D)); // ᡍ
+    latinToManchu["Y"] = QString(QChar(0x1836)); // ᠶ
+    latinToManchu["Z"] = QString(QChar(0x1839)); // ᠹ
+
+    // 多音节组合
+    latinToManchu["CH"] = QString(QChar(0x1834)); // ᠴ
+    latinToManchu["SH"] = QString(QChar(0x1830)); // ᠰ
+    latinToManchu["ZH"] = QString(QChar(0x1839)); // ᠹ
+    latinToManchu["KH"] = QString(QChar(0x184D)); // ᡍ
+    latinToManchu["GH"] = QString(QChar(0x1860)); // ᡠ
+    latinToManchu["NG"] = QString(QChar(0x1828)); // ᠨ
+    latinToManchu["TS"] = QString(QChar(0x1831)); // ᠱ
+    latinToManchu["DZ"] = QString(QChar(0x1833)); // ᠳ
+    latinToManchu["AA"] = QString(QChar(0x1820)); // ᠠ
+    latinToManchu["EE"] = QString(QChar(0x1868)); // ᡨ
+    latinToManchu["II"] = QString(QChar(0x1822)); // ᠢ
+    latinToManchu["OO"] = QString(QChar(0x1823)); // ᠣ
+    latinToManchu["UU"] = QString(QChar(0x1864)); // ᡤ
+
+    //-------------------------------------
+    // 因纽特文映射表 (加拿大原住民音节文字)
+    //-------------------------------------
+    latinToInuktitut["A"] = QString(QChar(0x1401)); // ᐁ
+    latinToInuktitut["B"] = QString(QChar(0x148B)); // ᒋ
+    latinToInuktitut["C"] = QString(QChar(0x14C2)); // ᓂ
+    latinToInuktitut["D"] = QString(QChar(0x1470)); // ᑰ
+    latinToInuktitut["E"] = QString(QChar(0x1402)); // ᐂ
+    latinToInuktitut["F"] = QString(QChar(0x14D0)); // ᓐ
+    latinToInuktitut["G"] = QString(QChar(0x14D1)); // ᓑ
+    latinToInuktitut["H"] = QString(QChar(0x14D2)); // ᓒ
+    latinToInuktitut["I"] = QString(QChar(0x1403)); // ᐃ
+    latinToInuktitut["J"] = QString(QChar(0x14D3)); // ᓓ
+    latinToInuktitut["K"] = QString(QChar(0x14A7)); // ᒧ
+    latinToInuktitut["L"] = QString(QChar(0x14D4)); // ᓔ
+    latinToInuktitut["M"] = QString(QChar(0x14D5)); // ᓕ
+    latinToInuktitut["N"] = QString(QChar(0x14D6)); // ᓖ
+    latinToInuktitut["O"] = QString(QChar(0x1404)); // ᐄ
+    latinToInuktitut["P"] = QString(QChar(0x14D7)); // ᓗ
+    latinToInuktitut["Q"] = QString(QChar(0x14D8)); // ᓘ
+    latinToInuktitut["R"] = QString(QChar(0x14D9)); // ᓙ
+    latinToInuktitut["S"] = QString(QChar(0x14DA)); // ᓚ
+    latinToInuktitut["T"] = QString(QChar(0x14DB)); // ᓛ
+    latinToInuktitut["U"] = QString(QChar(0x1405)); // ᐅ
+    latinToInuktitut["V"] = QString(QChar(0x14DC)); // ᓜ
+    latinToInuktitut["W"] = QString(QChar(0x14DD)); // ᓝ
+    latinToInuktitut["X"] = QString(QChar(0x14DE)); // ᓞ
+    latinToInuktitut["Y"] = QString(QChar(0x14DF)); // ᓟ
+    latinToInuktitut["Z"] = QString(QChar(0x14E0)); // ᓠ
+
+    // 多音节组合
+    latinToInuktitut["CH"] = QString(QChar(0x14C2)); // ᓂ
+    latinToInuktitut["SH"] = QString(QChar(0x14DA)); // ᓚ
+    latinToInuktitut["TH"] = QString(QChar(0x14DB)); // ᓛ
+    latinToInuktitut["NG"] = QString(QChar(0x14D6)); // ᓖ
+    latinToInuktitut["AA"] = QString(QChar(0x1401)); // ᐁ
+    latinToInuktitut["EE"] = QString(QChar(0x1402)); // ᐂ
+    latinToInuktitut["II"] = QString(QChar(0x1403)); // ᐃ
+    latinToInuktitut["OO"] = QString(QChar(0x1404)); // ᐄ
+    latinToInuktitut["UU"] = QString(QChar(0x1405)); // ᐅ
+
+
+    // -------------------------
+    // 拉丁字母到古突厥文 (Old Turkic, Orkhon runes)
+    // -------------------------
+    latinToOldTurkic["A"] = QString("𐰀"); // 𐰀
+    latinToOldTurkic["B"] = QString("𐰂"); // 𐰂
+    latinToOldTurkic["C"] = QString("𐰜"); // 𐰜 (使用Ç/CH表示C)
+    latinToOldTurkic["D"] = QString("𐰆"); // 𐰆
+    latinToOldTurkic["E"] = QString("𐰁"); // 𐰁
+    latinToOldTurkic["F"] = QString("𐰋"); // 𐰋 (用S近似F)
+    latinToOldTurkic["G"] = QString("𐰑"); // 𐰑
+    latinToOldTurkic["H"] = QString("𐰚"); // 𐰚
+    latinToOldTurkic["I"] = QString("𐰍"); // 𐰍 (Y字符，用于I)
+    latinToOldTurkic["J"] = QString("𐰅"); // 𐰅
+    latinToOldTurkic["K"] = QString("𐰏"); // 𐰏
+    latinToOldTurkic["L"] = QString("𐰈"); // 𐰈
+    latinToOldTurkic["M"] = QString("𐰎"); // 𐰎
+    latinToOldTurkic["N"] = QString("𐰉"); // 𐰉
+    latinToOldTurkic["O"] = QString("𐰒"); // 𐰒
+    latinToOldTurkic["P"] = QString("𐰃"); // 𐰃
+    latinToOldTurkic["Q"] = QString("𐰐"); // 𐰐
+    latinToOldTurkic["R"] = QString("𐰇"); // 𐰇
+    latinToOldTurkic["S"] = QString("𐰋"); // 𐰋
+    latinToOldTurkic["T"] = QString("𐰄"); // 𐰄
+    latinToOldTurkic["U"] = QString("𐰓"); // 𐰓
+    latinToOldTurkic["V"] = QString("𐰂"); // 𐰂 (用B近似V)
+    latinToOldTurkic["W"] = QString("𐰓"); // 𐰓 (用U近似W)
+    latinToOldTurkic["X"] = QString("𐰐"); // 𐰐 (用Q近似X)
+    latinToOldTurkic["Y"] = QString("𐰍"); // 𐰍
+    latinToOldTurkic["Z"] = QString("𐰞"); // 𐰞
+
+    // 添加小写字母映射
+    latinToOldTurkic["a"] = QString("𐰀"); // 𐰀
+    latinToOldTurkic["b"] = QString("𐰂"); // 𐰂
+    latinToOldTurkic["c"] = QString("𐰜"); // 𐰜
+    latinToOldTurkic["d"] = QString("𐰆"); // 𐰆
+    latinToOldTurkic["e"] = QString("𐰁"); // 𐰁
+    latinToOldTurkic["f"] = QString("𐰋"); // 𐰋
+    latinToOldTurkic["g"] = QString("𐰑"); // 𐰑
+    latinToOldTurkic["h"] = QString("𐰚"); // 𐰚
+    latinToOldTurkic["i"] = QString("𐰍"); // 𐰍
+    latinToOldTurkic["j"] = QString("𐰅"); // 𐰅
+    latinToOldTurkic["k"] = QString("𐰏"); // 𐰏
+    latinToOldTurkic["l"] = QString("𐰈"); // 𐰈
+    latinToOldTurkic["m"] = QString("𐰎"); // 𐰎
+    latinToOldTurkic["n"] = QString("𐰉"); // 𐰉
+    latinToOldTurkic["o"] = QString("𐰒"); // 𐰒
+    latinToOldTurkic["p"] = QString("𐰃"); // 𐰃
+    latinToOldTurkic["q"] = QString("𐰐"); // 𐰐
+    latinToOldTurkic["r"] = QString("𐰇"); // 𐰇
+    latinToOldTurkic["s"] = QString("𐰋"); // 𐰋
+    latinToOldTurkic["t"] = QString("𐰄"); // 𐰄
+    latinToOldTurkic["u"] = QString("𐰓"); // 𐰓
+    latinToOldTurkic["v"] = QString("𐰂"); // 𐰂
+    latinToOldTurkic["w"] = QString("𐰓"); // 𐰓
+    latinToOldTurkic["x"] = QString("𐰐"); // 𐰐
+    latinToOldTurkic["y"] = QString("𐰍"); // 𐰍
+    latinToOldTurkic["z"] = QString("𐰞"); // 𐰞
+    latinToOldTurkic["AI"] = QString("𐰀") + QString("𐰍"); // A + Y
+    latinToOldTurkic["AU"] = QString("𐰀") + QString("𐰓"); // A + U
+    latinToOldTurkic["OI"] = QString("𐰒") + QString("𐰍"); // O + Y
+    latinToOldTurkic["OU"] = QString("𐰒") + QString("𐰓"); // O + U
+    latinToOldTurkic["EI"] = QString("𐰁") + QString("𐰍"); // E + Y
+    latinToOldTurkic["IU"] = QString("𐰏") + QString("𐰓"); // I/K + U
+
+
+    // -------------------------
+    // 拉丁字母到古匈奴文 (Old Hunnic)
+    // -------------------------
+    latinToOldHunnic["A"] = QString("𐌀"); // 𐌀
+    latinToOldHunnic["B"] = QString("𐌁"); // 𐌁
+    latinToOldHunnic["C"] = QString("𐌂"); // 𐌂
+    latinToOldHunnic["D"] = QString("𐌃"); // 𐌃
+    latinToOldHunnic["E"] = QString("𐌄"); // 𐌄
+    latinToOldHunnic["F"] = QString("𐌅"); // 𐌅
+    latinToOldHunnic["G"] = QString("𐌆"); // 𐌆
+    latinToOldHunnic["H"] = QString("𐌇"); // 𐌇
+    latinToOldHunnic["I"] = QString("𐌈"); // 𐌈
+    latinToOldHunnic["J"] = QString("𐌉"); // 𐌉
+    latinToOldHunnic["K"] = QString("𐌊"); // 𐌊
+    latinToOldHunnic["L"] = QString("𐌋"); // 𐌋
+    latinToOldHunnic["M"] = QString("𐌌"); // 𐌌
+    latinToOldHunnic["N"] = QString("𐌍"); // 𐌍
+    latinToOldHunnic["O"] = QString("𐌎"); // 𐌎
+    latinToOldHunnic["P"] = QString("𐌏"); // 𐌏
+    latinToOldHunnic["Q"] = QString("𐌐"); // 𐌐
+    latinToOldHunnic["R"] = QString("𐌑"); // 𐌑
+    latinToOldHunnic["S"] = QString("𐌒"); // 𐌒
+    latinToOldHunnic["T"] = QString("𐌓"); // 𐌓
+    latinToOldHunnic["U"] = QString("𐌔"); // 𐌔
+    latinToOldHunnic["V"] = QString("𐌕"); // 𐌕
+    latinToOldHunnic["W"] = QString("𐌖"); // 𐌖
+    latinToOldHunnic["X"] = QString("𐌗"); // 𐌗
+    latinToOldHunnic["Y"] = QString("𐌘"); // 𐌘
+    latinToOldHunnic["Z"] = QString("𐌙"); // 𐌙
+    latinToOldHunnic["a"] = QString("𐌀"); // 𐌀
+    latinToOldHunnic["b"] = QString("𐌁"); // 𐌁
+    latinToOldHunnic["c"] = QString("𐌂"); // 𐌂
+    latinToOldHunnic["d"] = QString("𐌃"); // 𐌃
+    latinToOldHunnic["e"] = QString("𐌄"); // 𐌄
+    latinToOldHunnic["f"] = QString("𐌅"); // 𐌅
+    latinToOldHunnic["g"] = QString("𐌆"); // 𐌆
+    latinToOldHunnic["h"] = QString("𐌇"); // 𐌇
+    latinToOldHunnic["i"] = QString("𐌈"); // 𐌈
+    latinToOldHunnic["j"] = QString("𐌉"); // 𐌉
+    latinToOldHunnic["k"] = QString("𐌊"); // 𐌊
+    latinToOldHunnic["l"] = QString("𐌋"); // 𐌋
+    latinToOldHunnic["m"] = QString("𐌌"); // 𐌌
+    latinToOldHunnic["n"] = QString("𐌍"); // 𐌍
+    latinToOldHunnic["o"] = QString("𐌎"); // 𐌎
+    latinToOldHunnic["p"] = QString("𐌏"); // 𐌏
+    latinToOldHunnic["q"] = QString("𐌐"); // 𐌐
+    latinToOldHunnic["r"] = QString("𐌑"); // 𐌑
+    latinToOldHunnic["s"] = QString("𐌒"); // 𐌒
+    latinToOldHunnic["t"] = QString("𐌓"); // 𐌓
+    latinToOldHunnic["u"] = QString("𐌔"); // 𐌔
+    latinToOldHunnic["v"] = QString("𐌕"); // 𐌕
+    latinToOldHunnic["w"] = QString("𐌖"); // 𐌖
+    latinToOldHunnic["x"] = QString("𐌗"); // 𐌗
+    latinToOldHunnic["y"] = QString("𐌘"); // 𐌘
+    latinToOldHunnic["z"] = QString("𐌙"); // 𐌙
+
+    // 其他多音节/组合映射
+    latinToOldHunnic["AI"] = QString("𐌀") + QString("𐌘"); // A + Y
+    latinToOldHunnic["AU"] = QString("𐌀") + QString("𐌔"); // A + U
+    latinToOldHunnic["OI"] = QString("𐌎") + QString("𐌘"); // O + Y
+    latinToOldHunnic["OU"] = QString("𐌎") + QString("𐌔"); // O + U
+    latinToOldHunnic["EI"] = QString("𐌄") + QString("𐌘"); // E + Y
+    latinToOldHunnic["IU"] = QString("𐌊") + QString("𐌔"); // I/K + U
+
+
+    // -------------------------
+    // 拉丁字母到腓尼基文 (Phoenician)
+    // -------------------------
+    latinToPhoenician["A"] = QString("𐤀"); // 𐤀
+    latinToPhoenician["B"] = QString("𐤁"); // 𐤁
+    latinToPhoenician["C"] = QString("𐤂"); // 𐤂
+    latinToPhoenician["D"] = QString("𐤃"); // 𐤃
+    latinToPhoenician["E"] = QString("𐤄"); // 𐤄
+    latinToPhoenician["F"] = QString("𐤅"); // 𐤅
+    latinToPhoenician["G"] = QString("𐤆"); // 𐤆
+    latinToPhoenician["H"] = QString("𐤇"); // 𐤇
+    latinToPhoenician["I"] = QString("𐤉"); // 𐤉
+    latinToPhoenician["J"] = QString("𐤉"); // 𐤉 (与I相同)
+    latinToPhoenician["K"] = QString("𐤊"); // 𐤊
+    latinToPhoenician["L"] = QString("𐤋"); // 𐤋
+    latinToPhoenician["M"] = QString("𐤌"); // 𐤌
+    latinToPhoenician["N"] = QString("𐤍"); // 𐤍
+    latinToPhoenician["O"] = QString("𐤏"); // 𐤏
+    latinToPhoenician["P"] = QString("𐤐"); // 𐤐
+    latinToPhoenician["Q"] = QString("𐤒"); // 𐤒
+    latinToPhoenician["R"] = QString("𐤓"); // 𐤓
+    latinToPhoenician["S"] = QString("𐤔"); // 𐤔
+    latinToPhoenician["T"] = QString("𐤕"); // 𐤕
+    latinToPhoenician["U"] = QString("𐤅"); // 𐤅 (与F相同)
+    latinToPhoenician["V"] = QString("𐤅"); // 𐤅 (与F相同)
+    latinToPhoenician["W"] = QString("𐤅"); // 𐤅 (与F相同)
+    latinToPhoenician["X"] = QString("𐤎"); // 𐤎
+    latinToPhoenician["Y"] = QString("𐤉"); // 𐤉 (与I相同)
+    latinToPhoenician["Z"] = QString("𐤆"); // 𐤆 (与G相同)
+    latinToPhoenician["a"] = QString("𐤀"); // 𐤀
+    latinToPhoenician["b"] = QString("𐤁"); // 𐤁
+    latinToPhoenician["c"] = QString("𐤂"); // 𐤂
+    latinToPhoenician["d"] = QString("𐤃"); // 𐤃
+    latinToPhoenician["e"] = QString("𐤄"); // 𐤄
+    latinToPhoenician["f"] = QString("𐤅"); // 𐤅
+    latinToPhoenician["g"] = QString("𐤆"); // 𐤆
+    latinToPhoenician["h"] = QString("𐤇"); // 𐤇
+    latinToPhoenician["i"] = QString("𐤉"); // 𐤉
+    latinToPhoenician["j"] = QString("𐤉"); // 𐤉 (与i相同)
+    latinToPhoenician["k"] = QString("𐤊"); // 𐤊
+    latinToPhoenician["l"] = QString("𐤋"); // 𐤋
+    latinToPhoenician["m"] = QString("𐤌"); // 𐤌
+    latinToPhoenician["n"] = QString("𐤍"); // 𐤍
+    latinToPhoenician["o"] = QString("𐤏"); // 𐤏
+    latinToPhoenician["p"] = QString("𐤐"); // 𐤐
+    latinToPhoenician["q"] = QString("𐤒"); // 𐤒
+    latinToPhoenician["r"] = QString("𐤓"); // 𐤓
+    latinToPhoenician["s"] = QString("𐤔"); // 𐤔
+    latinToPhoenician["t"] = QString("𐤕"); // 𐤕
+    latinToPhoenician["u"] = QString("𐤅"); // 𐤅 (与f相同)
+    latinToPhoenician["v"] = QString("𐤅"); // 𐤅 (与f相同)
+    latinToPhoenician["w"] = QString("𐤅"); // 𐤅 (与f相同)
+    latinToPhoenician["x"] = QString("𐤎"); // 𐤎
+    latinToPhoenician["y"] = QString("𐤉"); // 𐤉 (与i相同)
+    latinToPhoenician["z"] = QString("𐤆"); // 𐤆 (与g相同)
+
+    // 其他多音节/组合映射
+    latinToPhoenician["AI"] = QString("𐤀") + QString("𐤉"); // A + I
+    latinToPhoenician["AU"] = QString("𐤀") + QString("𐤅"); // A + U
+    latinToPhoenician["OI"] = QString("𐤏") + QString("𐤉"); // O + I
+    latinToPhoenician["OU"] = QString("𐤏") + QString("𐤅"); // O + U
+    latinToPhoenician["EI"] = QString("𐤄") + QString("𐤉"); // E + I
+    latinToPhoenician["IU"] = QString("𐤉") + QString("𐤅"); // I + U
+
+
+    // -------------------------
+    // 拉丁字母到粟特文 (Sogdian)
+    // -------------------------
+    latinToSogdian["A"] = QString("𐼀"); // 𐼀
+    latinToSogdian["B"] = QString("𐼁"); // 𐼁
+    latinToSogdian["C"] = QString("𐼂"); // 𐼂
+    latinToSogdian["D"] = QString("𐼃"); // 𐼃
+    latinToSogdian["E"] = QString("𐼄"); // 𐼄
+    latinToSogdian["F"] = QString("𐼅"); // 𐼅
+    latinToSogdian["G"] = QString("𐼆"); // 𐼆
+    latinToSogdian["H"] = QString("𐼇"); // 𐼇
+    latinToSogdian["I"] = QString("𐼈"); // 𐼈
+    latinToSogdian["J"] = QString("𐼉"); // 𐼉
+    latinToSogdian["K"] = QString("𐼊"); // 𐼊
+    latinToSogdian["L"] = QString("𐼋"); // 𐼋
+    latinToSogdian["M"] = QString("𐼌"); // 𐼌
+    latinToSogdian["N"] = QString("𐼍"); // 𐼍
+    latinToSogdian["O"] = QString("𐼎"); // 𐼎
+    latinToSogdian["P"] = QString("𐼏"); // 𐼏
+    latinToSogdian["Q"] = QString("𐼐"); // 𐼐
+    latinToSogdian["R"] = QString("𐼑"); // 𐼑
+    latinToSogdian["S"] = QString("𐼒"); // 𐼒
+    latinToSogdian["T"] = QString("𐼓"); // 𐼓
+    latinToSogdian["U"] = QString("𐼔"); // 𐼔
+    latinToSogdian["V"] = QString("𐼕"); // 𐼕
+    latinToSogdian["W"] = QString("𐼖"); // 𐼖
+    latinToSogdian["X"] = QString("𐼗"); // 𐼗
+    latinToSogdian["Y"] = QString("𐼘"); // 𐼘
+    latinToSogdian["Z"] = QString("𐼙"); // 𐼙
+    latinToSogdian["a"] = QString("𐼀"); // 𐼀
+    latinToSogdian["b"] = QString("𐼁"); // 𐼁
+    latinToSogdian["c"] = QString("𐼂"); // 𐼂
+    latinToSogdian["d"] = QString("𐼃"); // 𐼃
+    latinToSogdian["e"] = QString("𐼄"); // 𐼄
+    latinToSogdian["f"] = QString("𐼅"); // 𐼅
+    latinToSogdian["g"] = QString("𐼆"); // 𐼆
+    latinToSogdian["h"] = QString("𐼇"); // 𐼇
+    latinToSogdian["i"] = QString("𐼈"); // 𐼈
+    latinToSogdian["j"] = QString("𐼉"); // 𐼉
+    latinToSogdian["k"] = QString("𐼊"); // 𐼊
+    latinToSogdian["l"] = QString("𐼋"); // 𐼋
+    latinToSogdian["m"] = QString("𐼌"); // 𐼌
+    latinToSogdian["n"] = QString("𐼍"); // 𐼍
+    latinToSogdian["o"] = QString("𐼎"); // 𐼎
+    latinToSogdian["p"] = QString("𐼏"); // 𐼏
+    latinToSogdian["q"] = QString("𐼐"); // 𐼐
+    latinToSogdian["r"] = QString("𐼑"); // 𐼑
+    latinToSogdian["s"] = QString("𐼒"); // 𐼒
+    latinToSogdian["t"] = QString("𐼓"); // 𐼓
+    latinToSogdian["u"] = QString("𐼔"); // 𐼔
+    latinToSogdian["v"] = QString("𐼕"); // 𐼕
+    latinToSogdian["w"] = QString("𐼖"); // 𐼖
+    latinToSogdian["x"] = QString("𐼗"); // 𐼗
+    latinToSogdian["y"] = QString("𐼘"); // 𐼘
+    latinToSogdian["z"] = QString("𐼙"); // 𐼙
+
+    // 其他多音节/组合映射
+    latinToSogdian["AI"] = QString("𐼀") + QString("𐼘"); // A + Y
+    latinToSogdian["AU"] = QString("𐼀") + QString("𐼔"); // A + U
+    latinToSogdian["OI"] = QString("𐼎") + QString("𐼘"); // O + Y
+    latinToSogdian["OU"] = QString("𐼎") + QString("𐼔"); // O + U
+    latinToSogdian["EI"] = QString("𐼄") + QString("𐼘"); // E + Y
+    latinToSogdian["IU"] = QString("𐼈") + QString("𐼔"); // I + U
+
+    // -------------------------
+    // 拉丁字母到传统匈牙利文 (Traditional Hungarian) 映射
+    // -------------------------
+    latinToTraditionalHungarian["A"] = QString("𐳀"); // 𐳀
+    latinToTraditionalHungarian["B"] = QString("𐳁"); // 𐳁
+    latinToTraditionalHungarian["C"] = QString("𐳂"); // 𐳂
+    latinToTraditionalHungarian["CS"] = QString("𐳃"); // 𐳃
+    latinToTraditionalHungarian["D"] = QString("𐳄"); // 𐳄
+    latinToTraditionalHungarian["E"] = QString("𐳅"); // 𐳅
+    latinToTraditionalHungarian["É"] = QString("𐳆"); // 𐳆
+    latinToTraditionalHungarian["F"] = QString("𐳇"); // 𐳇
+    latinToTraditionalHungarian["G"] = QString("𐳈"); // 𐳈
+    latinToTraditionalHungarian["GY"] = QString("𐳉"); // 𐳉
+    latinToTraditionalHungarian["H"] = QString("𐳊"); // 𐳊
+    latinToTraditionalHungarian["I"] = QString("𐳋"); // 𐳋
+    latinToTraditionalHungarian["Í"] = QString("𐳌"); // 𐳌
+    latinToTraditionalHungarian["J"] = QString("𐳍"); // 𐳍
+    latinToTraditionalHungarian["K"] = QString("𐳎"); // 𐳎
+    latinToTraditionalHungarian["L"] = QString("𐳏"); // 𐳏
+    latinToTraditionalHungarian["LY"] = QString("𐳐"); // 𐳐
+    latinToTraditionalHungarian["M"] = QString("𐳑"); // 𐳑
+    latinToTraditionalHungarian["N"] = QString("𐳒"); // 𐳒
+    latinToTraditionalHungarian["NY"] = QString("𐳓"); // 𐳓
+    latinToTraditionalHungarian["O"] = QString("𐳔"); // 𐳔
+    latinToTraditionalHungarian["Ó"] = QString("𐳕"); // 𐳕
+    latinToTraditionalHungarian["Ö"] = QString("𐳖"); // 𐳖
+    latinToTraditionalHungarian["Ő"] = QString("𐳗"); // 𐳗
+    latinToTraditionalHungarian["P"] = QString("𐳘"); // 𐳘
+    latinToTraditionalHungarian["Q"] = QString("𐳙"); // 𐳙
+    latinToTraditionalHungarian["R"] = QString("𐳚"); // 𐳚
+    latinToTraditionalHungarian["S"] = QString("𐳛"); // 𐳛
+    latinToTraditionalHungarian["SZ"] = QString("𐳜"); // 𐳜
+    latinToTraditionalHungarian["T"] = QString("𐳝"); // 𐳝
+    latinToTraditionalHungarian["TY"] = QString("𐳞"); // 𐳞
+    latinToTraditionalHungarian["U"] = QString("𐳟"); // 𐳟
+    latinToTraditionalHungarian["Ú"] = QString("𐳠"); // 𐳠
+    latinToTraditionalHungarian["Ü"] = QString("𐳡"); // 𐳡
+    latinToTraditionalHungarian["Ű"] = QString("𐳢"); // 𐳢
+    latinToTraditionalHungarian["V"] = QString("𐳣"); // 𐳣
+    latinToTraditionalHungarian["W"] = QString("𐳤"); // 𐳤
+    latinToTraditionalHungarian["X"] = QString("𐳥"); // 𐳥
+    latinToTraditionalHungarian["Y"] = QString("𐳦"); // 𐳦
+    latinToTraditionalHungarian["Z"] = QString("𐳧"); // 𐳧
+    latinToTraditionalHungarian["ZS"] = QString("𐳨"); // 𐳨
+
+    // 小写字母映射
+    latinToTraditionalHungarian["a"] = QString("𐳩"); // 𐳩
+    latinToTraditionalHungarian["b"] = QString("𐳪"); // 𐳪
+    latinToTraditionalHungarian["c"] = QString("𐳫"); // 𐳫
+    latinToTraditionalHungarian["cs"] = QString("𐳬"); // 𐳬
+    latinToTraditionalHungarian["d"] = QString("𐳭"); // 𐳭
+    latinToTraditionalHungarian["e"] = QString("𐳮"); // 𐳮
+    latinToTraditionalHungarian["é"] = QString("𐳯"); // 𐳯
+    latinToTraditionalHungarian["f"] = QString("𐳰"); // 𐳰
+    latinToTraditionalHungarian["g"] = QString("𐳱"); // 𐳱
+    latinToTraditionalHungarian["gy"] = QString("𐳲"); // 𐳲
+    latinToTraditionalHungarian["h"] = QString("𐳳"); // 𐳳
+    latinToTraditionalHungarian["i"] = QString("𐳴"); // 𐳴
+    latinToTraditionalHungarian["í"] = QString("𐳵"); // 𐳵
+    latinToTraditionalHungarian["j"] = QString("𐳶"); // 𐳶
+    latinToTraditionalHungarian["k"] = QString("𐳷"); // 𐳷
+    latinToTraditionalHungarian["l"] = QString("𐳸"); // 𐳸
+    latinToTraditionalHungarian["ly"] = QString("𐳹"); // 𐳹
+    latinToTraditionalHungarian["m"] = QString("𐳺"); // 𐳺
+    latinToTraditionalHungarian["n"] = QString("𐳻"); // 𐳻
+    latinToTraditionalHungarian["ny"] = QString("𐳼"); // 𐳼
+    latinToTraditionalHungarian["o"] = QString("𐳽"); // 𐳽
+    latinToTraditionalHungarian["ó"] = QString("𐳾"); // 𐳾
+    latinToTraditionalHungarian["ö"] = QString("𐳿"); // 𐳿
+    latinToTraditionalHungarian["ő"] = QString("𐴀"); // 𐴀
+    latinToTraditionalHungarian["p"] = QString("𐴁"); // 𐴁
+    latinToTraditionalHungarian["q"] = QString("𐴂"); // 𐴂
+    latinToTraditionalHungarian["r"] = QString("𐴃"); // 𐴃
+    latinToTraditionalHungarian["s"] = QString("𐴄"); // 𐴄
+    latinToTraditionalHungarian["sz"] = QString("𐴅"); // 𐴅
+    latinToTraditionalHungarian["t"] = QString("𐴆"); // 𐴆
+    latinToTraditionalHungarian["ty"] = QString("𐴇"); // 𐴇
+    latinToTraditionalHungarian["u"] = QString("𐴈"); // 𐴈
+    latinToTraditionalHungarian["ú"] = QString("𐴉"); // 𐴉
+    latinToTraditionalHungarian["ü"] = QString("𐴊"); // 𐴊
+    latinToTraditionalHungarian["ű"] = QString("𐴋"); // 𐴋
+    latinToTraditionalHungarian["v"] = QString("𐴌"); // 𐴌
+    latinToTraditionalHungarian["w"] = QString("𐴍"); // 𐴍
+    latinToTraditionalHungarian["x"] = QString("𐴎"); // 𐴎
+    latinToTraditionalHungarian["y"] = QString("𐴏"); // 𐴏
+    latinToTraditionalHungarian["z"] = QString("𐴐"); // 𐴐
+    latinToTraditionalHungarian["zs"] = QString("𐴑"); // 𐴑
+
+
 
 
 
@@ -1302,6 +1738,13 @@ void LetterConverter::initializeMaps()
     createReverseMap(latinToTelugu, teluguToLatin);
     createReverseMap(latinToKannada, kannadaToLatin);
     createReverseMap(latinToAssamese, assameseToLatin);
+    createReverseMap(latinToOldUyghur, oldUyghurToLatin);
+    createReverseMap(latinToOldTurkic, oldTurkicToLatin);
+    createReverseMap(latinToManchu, manchuToLatin);
+    createReverseMap(latinToInuktitut, inuktitutToLatin);
+    createReverseMap(latinToOldHunnic, oldHunnicToLatin);
+    createReverseMap(latinToPhoenician, phoenicianToLatin);
+    createReverseMap(latinToTraditionalHungarian, traditionalHungarianToLatin);
 }
 
 QString LetterConverter::convertText(const QString &text, AlphabetSystem system, ConversionDirection direction)
@@ -1345,6 +1788,7 @@ QString LetterConverter::convertText(const QString &text, AlphabetSystem system,
         }
     }
 
+
     QString intermediateText = text;
     // 如果目标不是拉丁字母且方向是TargetToLatin，先转换为拉丁字母
     if (direction != LatinToTarget) {
@@ -1379,6 +1823,14 @@ QString LetterConverter::convertText(const QString &text, AlphabetSystem system,
         case Telugu: currentMap = &latinToTelugu; break;
         case Kannada: currentMap = &latinToKannada; break;
         case Assamese: currentMap = &latinToAssamese; break;
+        case OldUyghur: currentMap = &latinToOldUyghur; break;
+        case Manchu: currentMap = &latinToManchu; break;
+        case Inuktitut: currentMap = &latinToInuktitut; break;
+        case OldTurkic: currentMap = &latinToOldTurkic; break;
+        case OldHunnic: currentMap = &latinToOldHunnic; break;
+        case Phoenician: currentMap = &latinToPhoenician; break;
+        case Sogdian: currentMap = &latinToSogdian; break;
+        case TraditionalHungarian: currentMap = &latinToTraditionalHungarian; break;
         default: break;
         }
     } else {
@@ -1403,10 +1855,18 @@ QString LetterConverter::convertText(const QString &text, AlphabetSystem system,
         case Kurdish: currentMap = &kurdishToLatin; break; 
         case Pashto: currentMap = &pashtoToLatin; break;
         case Ottoman: currentMap = &ottomanToLatin; break;
-        case Tamil: currentMap = &tamilToLatin; break; // 新增
-        case Telugu: currentMap = &teluguToLatin; break; // 新增
-        case Kannada: currentMap = &kannadaToLatin; break; // 新增
-        case Assamese: currentMap = &assameseToLatin; break; // 新增
+        case Tamil: currentMap = &tamilToLatin; break;
+        case Telugu: currentMap = &teluguToLatin; break; 
+        case Kannada: currentMap = &kannadaToLatin; break; 
+        case Assamese: currentMap = &assameseToLatin; break; 
+        case OldUyghur: currentMap = &oldUyghurToLatin; break; //new
+        case Manchu: currentMap = &manchuToLatin; break; //new
+        case Inuktitut: currentMap = &inuktitutToLatin; break; //new
+        case OldTurkic: currentMap = &oldTurkicToLatin; break; //new
+        case OldHunnic: currentMap = &oldHunnicToLatin; break; //new
+        case Phoenician: currentMap = &phoenicianToLatin; break; //new
+        case Sogdian: currentMap = &sogdianToLatin; break; //new
+        case TraditionalHungarian: currentMap = &traditionalHungarianToLatin; break; //new
         default: break;
         }
     }
@@ -1692,6 +2152,9 @@ QString LetterConverter::convertToArabic(const QString &text)
     }
     return result;
 }
+
+
+
 QString LetterConverter::convertFromArabic(const QString &text){
     // 使用反向映射表进行转换
     return convertWithMap(text, arabicToLatin);
@@ -1806,3 +2269,186 @@ QString LetterConverter::convertWithMap(const QString &text, const QHash<QString
     return result;
 }
 
+
+// 希伯来字母转换逻辑
+QString LetterConverter::convertToHebrew(const QString &text)
+{
+    QString result;
+    for (int i = 0; i < text.length(); i++) {
+        QChar c = text[i];
+        QString current = QString(c).toUpper();
+        bool isLower = c.isLower();
+
+        // 处理双字符组合
+        if (i < text.length() - 1) {
+            QString pair = text.mid(i, 2).toUpper();
+            if (latinToHebrew.contains(pair)) {
+                QString converted = latinToHebrew[pair];
+                result += converted;
+                i++;
+                continue;
+            }
+        }
+
+        // 处理特殊规则：Bet/Vet
+        if (current == "B") {
+            // 检查是否在词首或前一个字符是元音
+            if (i == 0 || isVowel(text[i-1])) {
+                result += isLower ? QString(QChar(0x05D1)) + QString(QChar(0x05BC)) : QString(QChar(0x05D1)) + QString(QChar(0x05BC)); // בּ (带dagesh的Bet)
+            } else {
+                result += isLower ? QString(QChar(0x05D1)) : QString(QChar(0x05D1)); // ב (Vet)
+            }
+            continue;
+        }
+
+        // 处理特殊规则：Kaf/Chaf
+        if (current == "K") {
+            // 检查是否在词首或前一个字符是元音
+            if (i == 0 || isVowel(text[i-1])) {
+                result += isLower ? QString(QChar(0x05DB)) + QString(QChar(0x05BC)) : QString(QChar(0x05DB)) + QString(QChar(0x05BC)); // כּ (带dagesh的Kaf)
+            } else {
+                result += isLower ? QString(QChar(0x05DB)) : QString(QChar(0x05DB)); // כ (Chaf)
+            }
+            continue;
+        }
+
+        // 处理特殊规则：Pe/Phe
+        if (current == "P") {
+            // 检查是否在词首或前一个字符是元音
+            if (i == 0 || isVowel(text[i-1])) {
+                result += isLower ? QString(QChar(0x05E4)) + QString(QChar(0x05BC)) : QString(QChar(0x05E4)) + QString(QChar(0x05BC)); // פּ (带dagesh的Pe)
+            } else {
+                result += isLower ? QString(QChar(0x05E4)) : QString(QChar(0x05E4)); // פ (Phe)
+            }
+            continue;
+        }
+
+        // 处理特殊规则：Shin/Sin
+        if (current == "S" && i < text.length() - 1 && text[i+1].toUpper() == 'H') {
+            // 检查是否有Sin点标记
+            if (i > 0 && text[i-1].toLower() == 's') {
+                result += isLower ? QString(QChar(0x05E9)) + QString(QChar(0x05C1)) : QString(QChar(0x05E9)) + QString(QChar(0x05C1)); // שׂ (Sin)
+            } else {
+                result += isLower ? QString(QChar(0x05E9)) + QString(QChar(0x05C2)) : QString(QChar(0x05E9)) + QString(QChar(0x05C2)); // שׁ (Shin)
+            }
+            i++; // 跳过 H
+            continue;
+        }
+
+        // 处理特殊规则：J (像jump中的/dʒ/音)
+        if (current == "J") {
+            // 使用 Gimel + 撇号 表示 /dʒ/ 音
+            result += isLower ? QString(QChar(0x05D2)) + "'" : QString(QChar(0x05D2)) + "'"; // ג' (Gimel + 撇号)
+            continue;
+        }
+
+
+        // 处理特殊规则：X (对应"西"音)
+        if (current == "X") {
+            // 检查后面是否跟着特定音节组合
+            if (i < text.length() - 1) {
+                QString nextTwo = "";
+                if (i < text.length() - 2) {
+                    nextTwo = text.mid(i+1, 2).toLower();
+                }
+                QString nextOne = text.mid(i+1, 1).toLower();
+
+                // 检查是否跟着 in, ing, ie, ue, iang, iong, ian, iu, iao
+                if (nextTwo == "in" || nextTwo == "ing" || nextTwo == "ie" ||
+                    nextTwo == "ue" || nextTwo == "ia" || nextTwo == "io" ||
+                    nextTwo == "iu" || nextTwo == "ia" || nextOne == "i") {
+                    // 使用 Shin 表示"西"音
+                    result += isLower ? QString(QChar(0x05E9)) + QString(QChar(0x05C2)) : QString(QChar(0x05E9)) + QString(QChar(0x05C2)); // שׁ (Shin)
+                    continue;
+                }
+            }
+    }
+
+        // 处理特殊规则：Q (根据后面是否跟着i决定发音)
+        if (current == "Q") {
+            // 检查后面是否跟着i
+            if (i < text.length() - 1 && text[i+1].toUpper() == 'I') {
+                // 发"其"的音，使用 Qof + Shuruk
+                result += isLower ? QString(QChar(0x05E7)) + QString(QChar(0x05BB)) : QString(QChar(0x05E7)) + QString(QChar(0x05BB)); // קוּ (Qof + Shuruk)
+            } else {
+                // 发question中q的音，使用 Qof
+                result += isLower ? QString(QChar(0x05E7)) : QString(QChar(0x05E7)); // ק (Qof)
+            }
+            continue;
+        }
+
+
+        // 处理特殊规则：G (如果前缀为in，发鼻音效果)
+        if (current == "G") {
+            // 检查前缀是否为in
+            if (i >= 2 && text[i-2].toLower() == 'i' && text[i-1].toLower() == 'n') {
+                // 发鼻音效果，使用 Gimel + Rafeh
+                result += isLower ? QString(QChar(0x05D2)) + QString(QChar(0x05BF)) : QString(QChar(0x05D2)) + QString(QChar(0x05BF)); // גֿ (Gimel + Rafeh)
+            } else {
+                // 默认情况，使用原来的映射
+                result += isLower ? QString(QChar(0x05D2)) : QString(QChar(0x05D2)); // ג (Gimel)
+            }
+            continue;
+        }
+
+
+
+        // 处理元音
+        if (isVowel(c)) {
+            // 检查前一个字符是否是辅音
+            if (i > 0 && !isVowel(text[i-1])) {
+                // 添加相应的元音符号
+                QString vowelSymbol = getHebrewVowelSymbol(c);
+                if (!vowelSymbol.isEmpty()) {
+                    result += vowelSymbol;
+                    continue;
+                }
+            }
+        }
+
+        // 默认映射
+        if (latinToHebrew.contains(current)) {
+            QString converted = latinToHebrew[current];
+            result += converted;
+        } else {
+            result += c;
+        }
+    }
+    return result;
+}
+
+QString LetterConverter::convertFromHebrew(const QString &text)
+{
+    // 使用反向映射表进行转换
+    return convertWithMap(text, hebrewToLatin);
+}
+
+// 辅助函数：检查字符是否是元音
+bool LetterConverter::isVowel(const QChar &c)
+{
+    QString upper = QString(c).toUpper();
+    return (upper == "A" || upper == "E" || upper == "I" || upper == "O" || upper == "U" ||
+            upper == "Á" || upper == "É" || upper == "Í" || upper == "Ó" || upper == "Ú");
+}
+
+// 辅助函数：获取希伯来文元音符号
+QString LetterConverter::getHebrewVowelSymbol(const QChar &c)
+{
+    QString upper = QString(c).toUpper();
+
+    // 基本元音映射
+    if (upper == "A") return QString(QChar(0x05B7));  // Patach (אַ)
+    if (upper == "E") return QString(QChar(0x05B5));  // Segol (אֶ)
+    if (upper == "I") return QString(QChar(0x05B9));  // Hiriq (אִ)
+    if (upper == "O") return QString(QChar(0x05B9));  // Kamatz (אָ)
+    if (upper == "U") return QString(QChar(0x05BB));  // Kubutz (אֻ)
+
+    // 带重音的元音
+    if (upper == "Á") return QString(QChar(0x05B8));  // Qamatz Qatan (אָ)
+    if (upper == "É") return QString(QChar(0x05B4));  // Hataf Segol (אֱ)
+    if (upper == "Í") return QString(QChar(0x05B6));  // Tzeirei (אֵ)
+    if (upper == "Ó") return QString(QChar(0x05C7));  // Qamatz Gadol (אֹ)
+    if (upper == "Ú") return QString(QChar(0x05B7));  // Shuruk (אוּ)
+
+    return "";
+}

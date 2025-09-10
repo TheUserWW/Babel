@@ -193,7 +193,39 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     </message>
     <message>
         <source>Kannada</source>
-        <translation>كانادا</translation>
+        <translation>الكانادا</translation>
+    </message>
+    <message>
+        <source>Manchu</source>
+        <translation>المانشو</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>الإينكتيتوت</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>التركية القديمة</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>الأويغورية القديمة</translation>
+    </message>
+    <message>
+        <source>OldHunnic</source>
+        <translation>الهونية القديمة</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>السغدية</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>الفينيقية</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>المجرية التقليدية</translation>
     </message>
 </context>
 <context>

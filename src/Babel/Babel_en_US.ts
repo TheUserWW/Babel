@@ -195,6 +195,38 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</tr
         <source>Kannada</source>
         <translation>Kannada</translation>
     </message>
+    <message>
+        <source>Manchu</source>
+        <translation>Manchu</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>Inuktitut</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>Old Turkic</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>Old Uyghur</translation>
+    </message>
+    <message>
+        <source>OldHunnic</source>
+        <translation>Old Hunnic</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>Sogdian</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>Phoenician</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>Traditional Hungarian</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>

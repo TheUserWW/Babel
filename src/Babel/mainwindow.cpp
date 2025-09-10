@@ -10,14 +10,59 @@
 #include <QSettings> // 添加QSettings头文件
 #include "aboutdialog.h"
 #include "phoneticchartdialog.h" // 添加头文件
+#include <QFontDatabase>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow),
-    phoneticChartDialog(nullptr) // 初始化对话框指针为nullptr
+    phoneticChartDialog(nullptr)
 {
     ui->setupUi(this);
-
+    
+    // 设置支持广泛Unicode字符的字体
+    QFont unicodeFont;
+    
+    // 尝试按优先级设置字体，添加蒙文和满文字体
+    QStringList fontFamilies = {
+        "Noto Sans Mongolian",  // 蒙文字体
+        "Noto Sans Manchu",     // 满文字体
+        "Mongolian Baiti",      // 另一种蒙文字体
+        "Noto Sans",            // 通用Unicode字体
+        "Segoe UI Historic",    // Windows上的备选
+        "Wreathe Unicode",      // 另一个广泛Unicode字体
+        "Arial Unicode MS",     // 跨平台备选
+        "Code2000",            // 另一个Unicode字体
+        "FreeSerif"            // Linux上的备选
+    };
+    
+    // 检查系统中可用的字体
+    QFontDatabase fontDb;
+    bool fontFound = false;
+    
+    for (const QString &family : fontFamilies) {
+        if (fontDb.families().contains(family)) {
+            unicodeFont = QFont(family, 10);
+            fontFound = true;
+            break;
+        }
+    }
+    
+    // 如果没有找到专门的Unicode字体，使用系统默认字体
+    if (!fontFound) {
+        unicodeFont = QFontDatabase::systemFont(QFontDatabase::GeneralFont);
+    }
+    
+    // 应用字体到输入和输出框
+    ui->inputEdit->setFont(unicodeFont);
+    ui->outputEdit->setFont(unicodeFont);
+    
+    // 为QTextEdit设置额外的属性以改善蒙文和满文显示
+    ui->outputEdit->setAcceptRichText(true);
+    ui->outputEdit->setAlignment(Qt::AlignLeft | Qt::AlignTop);
+    
+    // 尝试设置文本方向（可能需要根据蒙文和满文的特性调整）
+    ui->outputEdit->setLayoutDirection(Qt::LeftToRight);
+    
     // 添加语言切换动作组
     QActionGroup *languageGroup = new QActionGroup(this);
     languageGroup->addAction(ui->action);      // 简体中文
@@ -80,11 +125,13 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->targetComboBox->clear();
 
     // 添加所有字母系统选项
+
     ui->sourceComboBox->addItem(tr("Latin"), LetterConverter::Latin);
     ui->sourceComboBox->addItem(tr("Cyrillic"), LetterConverter::Cyrillic);
     ui->sourceComboBox->addItem(tr("Greek"), LetterConverter::Greek);
     ui->sourceComboBox->addItem(tr("Georgian"), LetterConverter::Georgian);
     ui->sourceComboBox->addItem(tr("Runic"), LetterConverter::Runic);
+    ui->sourceComboBox->addItem(tr("Trad Hungarian"),LetterConverter::TraditionalHungarian);
     ui->sourceComboBox->addItem(tr("Armenian"), LetterConverter::Armenian); 
     ui->sourceComboBox->addItem(tr("Tibetan"), LetterConverter::Tibetan);
     ui->sourceComboBox->addItem(tr("Devanagari"), LetterConverter::Devanagari);
@@ -95,6 +142,7 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Kannada"), LetterConverter::Kannada);
     ui->sourceComboBox->addItem(tr("Thai"), LetterConverter::Thai);
     ui->sourceComboBox->addItem(tr("Khmer"), LetterConverter::Khmer);
+    ui->sourceComboBox->addItem(tr("Phoenician"), LetterConverter::Phoenician);
     ui->sourceComboBox->addItem(tr("Syriac"), LetterConverter::Syriac);
     ui->sourceComboBox->addItem(tr("Arabic"), LetterConverter::Arabic);
     ui->sourceComboBox->addItem(tr("Uyghur"), LetterConverter::Uyghur);
@@ -104,9 +152,16 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Ottoman"), LetterConverter::Ottoman); 
     ui->sourceComboBox->addItem(tr("Hebrew"), LetterConverter::Hebrew);
     ui->sourceComboBox->addItem(tr("Geez"), LetterConverter::Geez); 
+    ui->sourceComboBox->addItem(tr("OldTurkic"), LetterConverter::OldTurkic);
+    ui->sourceComboBox->addItem(tr("OldUyghur"), LetterConverter::OldUyghur);
+    ui->sourceComboBox->addItem(tr("OldHunnic"), LetterConverter::OldHunnic);
+    ui->sourceComboBox->addItem(tr("Sogdian"), LetterConverter::Sogdian);
     ui->sourceComboBox->addItem(tr("Hangul"), LetterConverter::Hangul);
     ui->sourceComboBox->addItem(tr("Kana"), LetterConverter::Kana);
     ui->sourceComboBox->addItem(tr("Zhuyin"), LetterConverter::Zhuyin);
+    ui->sourceComboBox->addItem(tr("Manchu"), LetterConverter::Manchu);
+    ui->sourceComboBox->addItem(tr("Inuktitut"), LetterConverter::Inuktitut);
+    
 
 
 
@@ -200,7 +255,23 @@ void MainWindow::onConvertClicked()
     // 拉丁文到目标系统
     if (source == LetterConverter::Latin) {
         QString convertedText = converter.convertText(inputText, target);
-        ui->outputEdit->setPlainText(convertedText);
+        
+        // 对于蒙文、满文、传统匈牙利文和粟特文，尝试使用HTML格式以获得更好的显示效果
+        if (target == LetterConverter::Manchu) {
+            // 满文使用专门字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Manchu\", \"Mongolian Baiti\", \"Noto Sans Mongolian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else if (target == LetterConverter::OldUyghur) {
+            // 蒙文使用专门字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Mongolian\", \"Mongolian Baiti\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else if (target == LetterConverter::TraditionalHungarian || target == LetterConverter::Sogdian) {
+            // 传统匈牙利文和粟特文使用原有字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Old Hungarian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", \"Noto Sans Sogdian\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else {
+            ui->outputEdit->setPlainText(convertedText);
+        }
     }
     // 目标系统到拉丁文
     else if (target == LetterConverter::Latin) {
@@ -211,7 +282,23 @@ void MainWindow::onConvertClicked()
     else {
         QString intermediate = converter.convertText(inputText, source, LetterConverter::TargetToLatin);
         QString convertedText = converter.convertText(intermediate, target);
-        ui->outputEdit->setPlainText(convertedText);
+        
+        // 对于蒙文、满文、传统匈牙利文和粟特文，尝试使用HTML格式以获得更好的显示效果
+        if (target == LetterConverter::Manchu) {
+            // 满文使用专门字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Manchu\", \"Mongolian Baiti\", \"Noto Sans Mongolian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else if (target == LetterConverter::OldUyghur) {
+            // 蒙文使用专门字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Mongolian\", \"Mongolian Baiti\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else if (target == LetterConverter::TraditionalHungarian || target == LetterConverter::Sogdian) {
+            // 传统匈牙利文和粟特文使用原有字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Old Hungarian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", \"Noto Sans Sogdian\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else {
+            ui->outputEdit->setPlainText(convertedText);
+        }
     }
 }
 

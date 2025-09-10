@@ -5,7 +5,7 @@
     <message>
         <location filename="aboutdialog.ui" line="14"/>
         <source>关于 MemoryCleaner</source>
-        <translation>О Babel</translation>
+        <translation>Babel</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="30"/>
@@ -328,6 +328,38 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <source>Kannada</source>
         <translation>Каннада</translation>
+    </message>
+    <message>
+        <source>Manchu</source>
+        <translation>Маньчжурский</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>Инуктитут</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>Древнетюркский</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>Древнеуйгурский</translation>
+    </message>
+    <message>
+        <source>OldHunnic</source>
+        <translation>Древнегуннский</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>Согдийский</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>Финикийский</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>Традиционный венгерский</translation>
     </message>
 </context>
 </TS>

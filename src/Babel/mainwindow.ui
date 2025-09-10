@@ -23,8 +23,8 @@
      </widget>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="inputEdit">
-      <property name="plainText">
+     <widget class="QTextEdit" name="inputEdit">
+      <property name="html">
        <string>Hello World</string>
       </property>
      </widget>
@@ -81,7 +81,7 @@
      </widget>
     </item>
     <item>
-     <widget class="QPlainTextEdit" name="outputEdit">
+     <widget class="QTextEdit" name="outputEdit">
       <property name="readOnly">
        <bool>true</bool>
       </property>

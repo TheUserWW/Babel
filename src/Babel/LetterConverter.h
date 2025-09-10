@@ -41,6 +41,14 @@ public:
         Telugu,     // 泰卢固文
         Kannada,    // 卡纳达文
         Assamese,   // 阿萨姆文
+        OldUyghur,  // 回鹘蒙文
+        Manchu,     // 满文
+        Inuktitut,  // 因纽特文
+        OldTurkic,  // 古突厥文
+        OldHunnic,  // 古匈奴文
+        Phoenician, // 腓尼基文
+        Sogdian,    // 粟特文
+        TraditionalHungarian, // 传统匈牙利文
     };
     Q_ENUM(AlphabetSystem)
 
@@ -58,11 +66,15 @@ public:
     QString convertFromArabic(const QString &text);
     QString convertToKana(const QString &text);
     QString convertFromKana(const QString &text);
+    QString convertToHebrew(const QString &text);
+    QString convertFromHebrew(const QString &text);
     QString convertText(const QString &text, AlphabetSystem system, ConversionDirection direction = LatinToTarget);
     QString convertWithMap(const QString &text, const QHash<QString, QString> &map);  // 修改参数类型为QHash
 
 private:
     void initializeMaps();
+    bool isVowel(const QChar &c);
+    QString getHebrewVowelSymbol(const QChar &c);
 
     // 正向映射
     QHash<QString, QString> latinToCyrillic;  // 将QMap替换为QHash
@@ -87,10 +99,18 @@ private:
     QHash<QString, QString> latinToKurdish;
     QHash<QString, QString> latinToPashto;
     QHash<QString, QString> latinToOttoman;
-    QHash<QString, QString> latinToTamil;  // 新增：泰米尔文正向映射
-    QHash<QString, QString> latinToTelugu;  // 新增：泰卢固文正向映射
-    QHash<QString, QString> latinToKannada;  // 新增：卡纳达文正向映射
-    QHash<QString, QString> latinToAssamese;  // 新增：阿萨姆文正向映射
+    QHash<QString, QString> latinToTamil;  
+    QHash<QString, QString> latinToTelugu; 
+    QHash<QString, QString> latinToKannada;
+    QHash<QString, QString> latinToAssamese;
+    QHash<QString, QString> latinToOldUyghur; //new
+    QHash<QString, QString> latinToManchu; //new
+    QHash<QString, QString> latinToInuktitut; //new
+    QHash<QString, QString> latinToOldTurkic; //new
+    QHash<QString, QString> latinToOldHunnic; //new
+    QHash<QString, QString> latinToPhoenician; //new
+    QHash<QString, QString> latinToSogdian; //new
+    QHash<QString, QString> latinToTraditionalHungarian; // 传统匈牙利文
 
     // 反向映射
     QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
@@ -115,10 +135,18 @@ private:
     QHash<QString, QString> bengaliToLatin;
     QHash<QString, QString> kurdishToLatin;
     QHash<QString, QString> ottomanToLatin;
-    QHash<QString, QString> tamilToLatin;  // 新增：泰米尔文反向映射
-    QHash<QString, QString> teluguToLatin;  // 新增：泰卢固文反向映射
-    QHash<QString, QString> kannadaToLatin;  // 新增：卡纳达文反向映射
-    QHash<QString, QString> assameseToLatin;  // 新增：阿萨姆文反向映射
+    QHash<QString, QString> tamilToLatin;
+    QHash<QString, QString> teluguToLatin;
+    QHash<QString, QString> kannadaToLatin;
+    QHash<QString, QString> assameseToLatin;
+    QHash<QString, QString> oldUyghurToLatin;
+    QHash<QString, QString> manchuToLatin;
+    QHash<QString, QString> inuktitutToLatin;
+    QHash<QString, QString> oldTurkicToLatin;
+    QHash<QString, QString> oldHunnicToLatin;
+    QHash<QString, QString> phoenicianToLatin; //new
+    QHash<QString, QString> sogdianToLatin; //new
+    QHash<QString, QString> traditionalHungarianToLatin; // 传统匈牙利文反向映射
 };
 
 #endif // LETTERCONVERTER_H

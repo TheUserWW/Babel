@@ -329,5 +329,37 @@ junto con este programa. Si no es así, consulte &lt;https://www.gnu.org/license
         <source>Kannada</source>
         <translation>Canarés</translation>
     </message>
+    <message>
+        <source>Manchu</source>
+        <translation>Manchú</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>Inuktitut</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>Turco antiguo</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>Uigur antiguo</translation>
+    </message>
+    <message>
+        <source>OldHunnic</source>
+        <translation>Huno antiguo</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>Sogdiano</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>Fenicio</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>Húngaro tradicional</translation>
+    </message>
 </context>
 </TS>

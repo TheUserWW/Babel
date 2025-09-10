@@ -193,6 +193,38 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <source>Kannada</source>
         <translation>卡纳达字母</translation>
     </message>
+    <message>
+        <source>Manchu</source>
+        <translation>满文</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>因纽特文</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>古突厥文</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>古维吾尔文</translation>
+    </message>
+    <message>
+        <source>OldHunnic</source>
+        <translation>古匈文</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>粟特文</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>腓尼基文</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>传统匈牙利文</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>

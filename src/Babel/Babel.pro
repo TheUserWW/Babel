@@ -13,6 +13,12 @@ QT_CONFIG -= accessibility concurrent dbus network printsupport sql testlib
 QMAKE_CXXFLAGS += -static -static-libgcc -static-libstdc++
 QMAKE_LFLAGS += -static -static-libgcc -static-libstdc++
 
+# 启用 O2 优化
+QMAKE_CFLAGS_RELEASE -= -O0
+QMAKE_CFLAGS_RELEASE += -O2
+QMAKE_CXXFLAGS_RELEASE -= -O0
+QMAKE_CXXFLAGS_RELEASE += -O2
+
 SOURCES += \
     LetterConverter.cpp \
     aboutdialog.cpp \

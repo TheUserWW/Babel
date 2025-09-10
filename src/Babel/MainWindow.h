@@ -31,6 +31,7 @@ private:
     LetterConverter converter;
     PhoneticChartDialog *phoneticChartDialog; // 添加对话框指针成员变量
     void populateAlphabetComboBoxes();
+    void updateFontForAlphabet(LetterConverter::AlphabetSystem system); // 新增方法
 };
 
 #endif // MAINWINDOW_H

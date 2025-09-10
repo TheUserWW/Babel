@@ -329,5 +329,37 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <source>Kannada</source>
         <translation>Kannada</translation>
     </message>
+    <message>
+        <source>Manchu</source>
+        <translation>Mandchou</translation>
+    </message>
+    <message>
+        <source>Inuktit极</source>
+        <translation>Inuktitut</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>Vieux turc</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>Vieux ouïghour</translation>
+    </message>
+    <message>
+        <source>OldHunnic</source>
+        <translation>Vieux hunnique</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>Sogdien</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>Phénicien</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>Hongrois traditionnel</translation>
+    </message>
 </context>
 </TS>
