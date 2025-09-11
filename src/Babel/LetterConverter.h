@@ -2,10 +2,9 @@
 #define LETTERCONVERTER_H
 
 #include <QObject>
-#include <QHash>  // 将QMap替换为QHash
+#include <QHash>
 #include <QString>
-#include <windows.h>
-#include <imm.h>
+
 
 class LetterConverter : public QObject
 {

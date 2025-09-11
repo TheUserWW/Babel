@@ -8,6 +8,8 @@
 #include <QDesktopServices>
 #include <QUrl>
 #include <QSettings> // 添加QSettings头文件
+#include <QStandardPaths> // 添加QStandardPaths头文件
+#include <QDir>
 #include "aboutdialog.h"
 #include "phoneticchartdialog.h" // 添加头文件
 #include <QFontDatabase>
@@ -73,7 +75,10 @@ MainWindow::MainWindow(QWidget *parent) :
     languageGroup->setExclusive(true);
 
     // 读取保存的语言偏好
-    QSettings settings("Babel.ini", QSettings::IniFormat);
+    QString configPath = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
+    QDir().mkpath(configPath);
+    QString iniFilePath = configPath + "/Babel.ini";
+    QSettings settings(iniFilePath, QSettings::IniFormat);
     QString language = settings.value("Language", "en_US").toString();
 
     // 设置默认语言
@@ -223,7 +228,10 @@ void MainWindow::switchLanguage(const QString &language)
     }
 
     // 保存语言设置到配置文件
-    QSettings settings("Babel.ini", QSettings::IniFormat);
+    QString configPath = QStandardPaths::writableLocation(QStandardPaths::AppConfigLocation);
+    QDir().mkpath(configPath);
+    QString iniFilePath = configPath + "/Babel.ini";
+    QSettings settings(iniFilePath, QSettings::IniFormat);
     settings.setValue("Language", language);
     settings.sync(); // 确保立即写入文件
 
@@ -328,12 +336,24 @@ void MainWindow::onPhoneticChartClicked()
         return;
     }
 
-    // 创建新的对话框
-    phoneticChartDialog = new PhoneticChartDialog(this);
-    // 设置对话框在关闭时隐藏而不是删除
-    phoneticChartDialog->setAttribute(Qt::WA_DeleteOnClose, false);
-    // 显示对话框
-    phoneticChartDialog->show();
+    try {
+        // 创建新的对话框
+        phoneticChartDialog = new PhoneticChartDialog(this);
+        // 设置对话框在关闭时隐藏而不是删除
+        phoneticChartDialog->setAttribute(Qt::WA_DeleteOnClose, false);
+        // 显示对话框
+        phoneticChartDialog->show();
+    } catch (const std::exception& e) {
+        // 如果创建对话框时发生异常，显示错误信息
+        qCritical() << "Failed to create PhoneticChartDialog:" << e.what();
+        // 确保指针为空，避免后续操作出错
+        phoneticChartDialog = nullptr;
+    } catch (...) {
+        // 捕获其他未知异常
+        qCritical() << "Unknown error occurred while creating PhoneticChartDialog";
+        // 确保指针为空，避免后续操作出错
+        phoneticChartDialog = nullptr;
+    }
 }
 
 void MainWindow::onTheUserWWClicked()
