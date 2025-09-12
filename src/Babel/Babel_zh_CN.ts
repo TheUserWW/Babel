@@ -210,8 +210,8 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <translation>古维吾尔文</translation>
     </message>
     <message>
-        <source>OldHunnic</source>
-        <translation>古匈文</translation>
+        <source>OldItalic</source>
+        <translation>古意大利文</translation>
     </message>
     <message>
         <source>Sogdian</source>
@@ -232,6 +232,14 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <source>Full Arabic</source>
         <translation>完整阿拉伯文</translation>
+    </message>
+    <message>
+        <source>OldSouthArabian</source>
+        <translation>古南阿拉伯字母</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>古北阿拉伯字母</translation>
     </message>
 </context>
 <context>

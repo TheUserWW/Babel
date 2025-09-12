@@ -57,4 +57,3 @@ TRANSLATIONS += \
     Babel_fr_FR.ts \
     Babel_ru_RU.ts \
     Babel_zh_CN.ts
-

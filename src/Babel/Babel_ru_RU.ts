@@ -346,8 +346,8 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <translation>Древнеуйгурский</translation>
     </message>
     <message>
-        <source>OldHunnic</source>
-        <translation>Древнегуннский</translation>
+        <source>OldItalic</source>
+        <translation>Древнеиталийский</translation>
     </message>
     <message>
         <source>Sogdian</source>
@@ -368,6 +368,14 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <source>Full Arabic</source>
         <translation>Полный арабский</translation>
+    </message>
+    <message>
+        <source>OldSouthArabian</source>
+        <translation>Древнеюжноаравийский</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>Древнесевероаравийский</translation>
     </message>
 </context>
 </TS>

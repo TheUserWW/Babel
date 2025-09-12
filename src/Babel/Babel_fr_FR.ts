@@ -346,8 +346,8 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <translation>Vieux ouïghour</translation>
     </message>
     <message>
-        <source>OldHunnic</source>
-        <translation>Vieux hunnique</translation>
+        <source>OldItalic</source>
+        <translation>Ancien Italique</translation>
     </message>
     <message>
         <source>Sogdian</source>
@@ -368,6 +368,14 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
     <message>
         <source>Full Arabic</source>
         <translation>Arabe complet</translation>
+    </message>
+    <message>
+        <source>OldSouthArabian</source>
+        <translation>Vieux sud-arabique</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>Vieux nord-arabique</translation>
     </message>
 </context>
 </TS>

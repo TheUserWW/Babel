@@ -46,10 +46,12 @@ public:
         Manchu,     // 满文
         Inuktitut,  // 因纽特文
         OldTurkic,  // 古突厥文
-        OldHunnic,  // 古匈奴文
+        OldItalic,  // 古意大利文
         Phoenician, // 腓尼基文
         Sogdian,    // 粟特文
         TraditionalHungarian, // 传统匈牙利文
+        OldSouthArabian, // 古南阿拉伯字母
+        OldNorthArabian, // 古北阿拉伯字母
     };
     Q_ENUM(AlphabetSystem)
 
@@ -69,8 +71,6 @@ public:
     QString convertFromFullArabic(const QString &text);
     QString convertToKana(const QString &text);
     QString convertFromKana(const QString &text);
-    QString convertToHebrew(const QString &text);
-    QString convertFromHebrew(const QString &text);
     QString convertText(const QString &text, AlphabetSystem system, ConversionDirection direction = LatinToTarget);
     QString convertWithMap(const QString &text, const QHash<QString, QString> &map);  // 修改参数类型为QHash
 
@@ -111,11 +111,13 @@ private:
     QHash<QString, QString> latinToManchu; //new
     QHash<QString, QString> latinToInuktitut; //new
     QHash<QString, QString> latinToOldTurkic; //new
-    QHash<QString, QString> latinToOldHunnic; //new
     QHash<QString, QString> latinToPhoenician; //new
     QHash<QString, QString> latinToSogdian; //new
     QHash<QString, QString> latinToTraditionalHungarian; // 传统匈牙利文
     QHash<QString, QString> latinToFullArabic; // 完整阿拉伯字母
+    QHash<QString, QString> latinToOldItalic; // 古意大利文
+    QHash<QString, QString> latinToOldSouthArabian; // 古南阿拉伯字母
+    QHash<QString, QString> latinToOldNorthArabian; // 古北阿拉伯字母
 
     // 反向映射
     QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
@@ -148,12 +150,14 @@ private:
     QHash<QString, QString> manchuToLatin;
     QHash<QString, QString> inuktitutToLatin;
     QHash<QString, QString> oldTurkicToLatin;
-    QHash<QString, QString> oldHunnicToLatin;
     QHash<QString, QString> phoenicianToLatin; //new
     QHash<QString, QString> sogdianToLatin; //new
     QHash<QString, QString> traditionalHungarianToLatin; // 传统匈牙利文反向映射
     QHash<QString, QString> fullArabicToLatin; // 完整阿拉伯字母反向映射
     QHash<QString, QString> oldPersianToLatin; // 古波斯文反向映射
+    QHash<QString, QString> oldItalicToLatin; // 古意大利文反向映射
+    QHash<QString, QString> oldSouthArabianToLatin; // 古南阿拉伯字母反向映射
+    QHash<QString, QString> oldNorthArabianToLatin; // 古北阿拉伯字母反向映射
 };
 
 #endif // LETTERCONVERTER_H

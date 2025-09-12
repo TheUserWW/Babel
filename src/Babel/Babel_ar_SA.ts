@@ -212,8 +212,8 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <translation>الأويغورية القديمة</translation>
     </message>
     <message>
-        <source>OldHunnic</source>
-        <translation>الهونية القديمة</translation>
+        <source>OldItalic</source>
+        <translation>الإيطالية القديمة</translation>
     </message>
     <message>
         <source>Sogdian</source>
@@ -234,6 +234,14 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <source>Full Arabic</source>
         <translation>العربية الكاملة</translation>
+    </message>
+        <message>
+        <source>OldSouthArabian</source>
+        <translation>العربية الجنوبية القديمة</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>العربية الشمالية القديمة</translation>
     </message>
 </context>
 <context>

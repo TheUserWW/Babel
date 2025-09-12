@@ -155,6 +155,14 @@ junto con este programa. Si no es así, consulte &lt;https://www.gnu.org/license
         <source>Armenian</source>
         <translation>Armenio</translation>
     </message>
+        <message>
+        <source>OldSouthArabian</source>
+        <translation>Antiguo surarábigo</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>Antiguo norarábigo</translation>
+    </message>
     <message>
         <source>Bengali</source>
         <translation>Bengalí</translation>
@@ -346,8 +354,8 @@ junto con este programa. Si no es así, consulte &lt;https://www.gnu.org/license
         <translation>Uigur antiguo</translation>
     </message>
     <message>
-        <source>OldHunnic</source>
-        <translation>Huno antiguo</translation>
+        <source>OldItalic</source>
+        <translation>Italiano antiguo</translation>
     </message>
     <message>
         <source>Sogdian</source>
