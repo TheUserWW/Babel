@@ -26,8 +26,10 @@ public:
         Kana,       // 假名
         Zhuyin,     // 注音符号
         Arabic,     // 阿拉伯文
+        FullArabic, // 完整阿拉伯字母
         Uyghur,     // 维吾尔文
         Persian,    // 波斯语
+        OldPersian, // 古波斯文
         Georgian,   // 格鲁吉亚文
         Geez,       // 吉兹字母
         Thai,       // 泰文
@@ -63,6 +65,8 @@ public:
     QString convertFromGreek(const QString &text);
     QString convertToArabic(const QString &text);
     QString convertFromArabic(const QString &text);
+    QString convertToFullArabic(const QString &text);
+    QString convertFromFullArabic(const QString &text);
     QString convertToKana(const QString &text);
     QString convertFromKana(const QString &text);
     QString convertToHebrew(const QString &text);
@@ -90,6 +94,7 @@ private:
     QHash<QString, QString> latinToArabic;
     QHash<QString, QString> latinToUyghur;
     QHash<QString, QString> latinToPersian;
+    QHash<QString, QString> latinToOldPersian; // 古波斯文
     QHash<QString, QString> latinToGeorgian;
     QHash<QString, QString> latinToGeez;
     QHash<QString, QString> latinToThai;
@@ -110,6 +115,7 @@ private:
     QHash<QString, QString> latinToPhoenician; //new
     QHash<QString, QString> latinToSogdian; //new
     QHash<QString, QString> latinToTraditionalHungarian; // 传统匈牙利文
+    QHash<QString, QString> latinToFullArabic; // 完整阿拉伯字母
 
     // 反向映射
     QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
@@ -146,6 +152,8 @@ private:
     QHash<QString, QString> phoenicianToLatin; //new
     QHash<QString, QString> sogdianToLatin; //new
     QHash<QString, QString> traditionalHungarianToLatin; // 传统匈牙利文反向映射
+    QHash<QString, QString> fullArabicToLatin; // 完整阿拉伯字母反向映射
+    QHash<QString, QString> oldPersianToLatin; // 古波斯文反向映射
 };
 
 #endif // LETTERCONVERTER_H

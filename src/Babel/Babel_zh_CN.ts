@@ -225,6 +225,14 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <source>Trad Hungarian</source>
         <translation>传统匈牙利文</translation>
     </message>
+    <message>
+        <source>OldPersian</source>
+        <translation>古波斯文</translation>
+    </message>
+    <message>
+        <source>Full Arabic</source>
+        <translation>完整阿拉伯文</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>

@@ -361,5 +361,13 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <source>Trad Hungarian</source>
         <translation>Hongrois traditionnel</translation>
     </message>
+    <message>
+        <source>OldPersian</source>
+        <translation>Vieux perse</translation>
+    </message>
+    <message>
+        <source>Full Arabic</source>
+        <translation>Arabe complet</translation>
+    </message>
 </context>
 </TS>

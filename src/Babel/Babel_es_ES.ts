@@ -361,5 +361,13 @@ junto con este programa. Si no es así, consulte &lt;https://www.gnu.org/license
         <source>Trad Hungarian</source>
         <translation>Húngaro tradicional</translation>
     </message>
+    <message>
+        <source>OldPersian</source>
+        <translation>Persa antiguo</translation>
+    </message>
+    <message>
+        <source>Full Arabic</source>
+        <translation>Árabe completo</translation>
+    </message>
 </context>
 </TS>

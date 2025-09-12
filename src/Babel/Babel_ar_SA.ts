@@ -227,6 +227,14 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <source>Trad Hungarian</source>
         <translation>المجرية التقليدية</translation>
     </message>
+    <message>
+        <source>OldPersian</source>
+        <translation>الفارسية القديمة</translation>
+    </message>
+    <message>
+        <source>Full Arabic</source>
+        <translation>العربية الكاملة</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>

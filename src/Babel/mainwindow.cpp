@@ -150,6 +150,7 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Phoenician"), LetterConverter::Phoenician);
     ui->sourceComboBox->addItem(tr("Syriac"), LetterConverter::Syriac);
     ui->sourceComboBox->addItem(tr("Arabic"), LetterConverter::Arabic);
+    ui->sourceComboBox->addItem(tr("Full Arabic"), LetterConverter::FullArabic);
     ui->sourceComboBox->addItem(tr("Uyghur"), LetterConverter::Uyghur);
     ui->sourceComboBox->addItem(tr("Persian"), LetterConverter::Persian);
     ui->sourceComboBox->addItem(tr("Kurdish"), LetterConverter::Kurdish); 
@@ -166,6 +167,7 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Zhuyin"), LetterConverter::Zhuyin);
     ui->sourceComboBox->addItem(tr("Manchu"), LetterConverter::Manchu);
     ui->sourceComboBox->addItem(tr("Inuktitut"), LetterConverter::Inuktitut);
+    ui->sourceComboBox->addItem(tr("OldPersian"), LetterConverter::OldPersian);
     
 
 
