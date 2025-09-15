@@ -52,6 +52,7 @@ public:
         TraditionalHungarian, // 传统匈牙利文
         OldSouthArabian, // 古南阿拉伯字母
         OldNorthArabian, // 古北阿拉伯字母
+        MeroiticHieroglyphs, // 麦罗埃文圣书体
     };
     Q_ENUM(AlphabetSystem)
 
@@ -118,6 +119,7 @@ private:
     QHash<QString, QString> latinToOldItalic; // 古意大利文
     QHash<QString, QString> latinToOldSouthArabian; // 古南阿拉伯字母
     QHash<QString, QString> latinToOldNorthArabian; // 古北阿拉伯字母
+    QHash<QString, QString> latinToMeroiticHieroglyphs; // 麦罗埃文圣书体
 
     // 反向映射
     QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
@@ -158,6 +160,7 @@ private:
     QHash<QString, QString> oldItalicToLatin; // 古意大利文反向映射
     QHash<QString, QString> oldSouthArabianToLatin; // 古南阿拉伯字母反向映射
     QHash<QString, QString> oldNorthArabianToLatin; // 古北阿拉伯字母反向映射
+    QHash<QString, QString> meroiticHieroglyphsToLatin; // 麦罗埃文圣书体反向映射
 };
 
 #endif // LETTERCONVERTER_H

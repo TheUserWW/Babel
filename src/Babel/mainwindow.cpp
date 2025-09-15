@@ -151,6 +151,7 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Phoenician"), LetterConverter::Phoenician);
     ui->sourceComboBox->addItem(tr("OldSouthArabian"), LetterConverter::OldSouthArabian);
     ui->sourceComboBox->addItem(tr("OldNorthArabian"), LetterConverter::OldNorthArabian);
+    ui->sourceComboBox->addItem(tr("MeroiticHieroglyphs"), LetterConverter::MeroiticHieroglyphs);
     ui->sourceComboBox->addItem(tr("Syriac"), LetterConverter::Syriac);
     ui->sourceComboBox->addItem(tr("Arabic"), LetterConverter::Arabic);
     ui->sourceComboBox->addItem(tr("Full Arabic"), LetterConverter::FullArabic);
@@ -268,7 +269,7 @@ void MainWindow::onConvertClicked()
     if (source == LetterConverter::Latin) {
         QString convertedText = converter.convertText(inputText, target);
         
-        // 对于蒙文、满文、传统匈牙利文和粟特文，尝试使用HTML格式以获得更好的显示效果
+        // 对于蒙文、满文、传统匈牙利文、粟特文和麦罗埃文圣书体，尝试使用HTML格式以获得更好的显示效果
         if (target == LetterConverter::Manchu) {
             // 满文使用专门字体
             QString htmlText = "<div style='font-family: \"Noto Sans Manchu\", \"Mongolian Baiti\", \"Noto Sans Mongolian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
@@ -281,7 +282,16 @@ void MainWindow::onConvertClicked()
             // 传统匈牙利文和粟特文使用原有字体
             QString htmlText = "<div style='font-family: \"Noto Sans Old Hungarian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", \"Noto Sans Sogdian\", sans-serif;'>" + convertedText + "</div>";
             ui->outputEdit->setHtml(htmlText);
-        } else {
+        } else if (target == LetterConverter::MeroiticHieroglyphs) {
+            // 麦罗埃文圣书体使用专门字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Meroitic\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", \"FreeSerif\", sans-serif; font-size: 16pt;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else if(target == LetterConverter::Sogdian)
+        {
+            QString htmlText = "<div style='font-family: \"Noto Sans Sogdian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        }
+        else {
             ui->outputEdit->setPlainText(convertedText);
         }
     }
@@ -295,7 +305,7 @@ void MainWindow::onConvertClicked()
         QString intermediate = converter.convertText(inputText, source, LetterConverter::TargetToLatin);
         QString convertedText = converter.convertText(intermediate, target);
         
-        // 对于蒙文、满文、传统匈牙利文和粟特文，尝试使用HTML格式以获得更好的显示效果
+        // 对于蒙文、满文、传统匈牙利文、粟特文和麦罗埃文圣书体，尝试使用HTML格式以获得更好的显示效果
         if (target == LetterConverter::Manchu) {
             // 满文使用专门字体
             QString htmlText = "<div style='font-family: \"Noto Sans Manchu\", \"Mongolian Baiti\", \"Noto Sans Mongolian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", sans-serif;'>" + convertedText + "</div>";
@@ -307,6 +317,10 @@ void MainWindow::onConvertClicked()
         } else if (target == LetterConverter::TraditionalHungarian || target == LetterConverter::Sogdian) {
             // 传统匈牙利文和粟特文使用原有字体
             QString htmlText = "<div style='font-family: \"Noto Sans Old Hungarian\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", \"Noto Sans Sogdian\", sans-serif;'>" + convertedText + "</div>";
+            ui->outputEdit->setHtml(htmlText);
+        } else if (target == LetterConverter::MeroiticHieroglyphs) {
+            // 麦罗埃文圣书体使用专门字体
+            QString htmlText = "<div style='font-family: \"Noto Sans Meroitic\", \"Segoe UI Historic\", \"Arial Unicode MS\", \"Code2000\", \"FreeSerif\", sans-serif; font-size: 16pt;'>" + convertedText + "</div>";
             ui->outputEdit->setHtml(htmlText);
         } else {
             ui->outputEdit->setPlainText(convertedText);
