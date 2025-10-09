@@ -137,7 +137,7 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("OldItalic"), LetterConverter::OldItalic);
     ui->sourceComboBox->addItem(tr("Georgian"), LetterConverter::Georgian);
     ui->sourceComboBox->addItem(tr("Runic"), LetterConverter::Runic);
-    ui->sourceComboBox->addItem(tr("Trad Hungarian"),LetterConverter::TraditionalHungarian);
+    ui->sourceComboBox->addItem(tr("Old Hungarian"),LetterConverter::TraditionalHungarian);
     ui->sourceComboBox->addItem(tr("Armenian"), LetterConverter::Armenian); 
     ui->sourceComboBox->addItem(tr("Tibetan"), LetterConverter::Tibetan);
     ui->sourceComboBox->addItem(tr("Devanagari"), LetterConverter::Devanagari);
@@ -152,15 +152,16 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("OldSouthArabian"), LetterConverter::OldSouthArabian);
     ui->sourceComboBox->addItem(tr("OldNorthArabian"), LetterConverter::OldNorthArabian);
     ui->sourceComboBox->addItem(tr("MeroiticHieroglyphs"), LetterConverter::MeroiticHieroglyphs);
+    ui->sourceComboBox->addItem(tr("MeroiticCursive"), LetterConverter::MeroiticCursive);
     ui->sourceComboBox->addItem(tr("Syriac"), LetterConverter::Syriac);
     ui->sourceComboBox->addItem(tr("Arabic"), LetterConverter::Arabic);
-    ui->sourceComboBox->addItem(tr("Full Arabic"), LetterConverter::FullArabic);
     ui->sourceComboBox->addItem(tr("Uyghur"), LetterConverter::Uyghur);
     ui->sourceComboBox->addItem(tr("Persian"), LetterConverter::Persian);
     ui->sourceComboBox->addItem(tr("Kurdish"), LetterConverter::Kurdish); 
     ui->sourceComboBox->addItem(tr("Pashto"), LetterConverter::Pashto); 
     ui->sourceComboBox->addItem(tr("Ottoman"), LetterConverter::Ottoman); 
     ui->sourceComboBox->addItem(tr("Hebrew"), LetterConverter::Hebrew);
+    ui->sourceComboBox->addItem(tr("Samaritan"), LetterConverter::Samaritan);  // 撒玛利亚字母
     ui->sourceComboBox->addItem(tr("Geez"), LetterConverter::Geez); 
     ui->sourceComboBox->addItem(tr("OldTurkic"), LetterConverter::OldTurkic);
     ui->sourceComboBox->addItem(tr("OldUyghur"), LetterConverter::OldUyghur);

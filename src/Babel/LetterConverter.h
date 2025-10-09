@@ -26,10 +26,10 @@ public:
         Kana,       // 假名
         Zhuyin,     // 注音符号
         Arabic,     // 阿拉伯文
-        FullArabic, // 完整阿拉伯字母
         Uyghur,     // 维吾尔文
         Persian,    // 波斯语
         OldPersian, // 古波斯文
+        Samaritan,  // 撒玛利亚字母
         Georgian,   // 格鲁吉亚文
         Geez,       // 吉兹字母
         Thai,       // 泰文
@@ -53,6 +53,7 @@ public:
         OldSouthArabian, // 古南阿拉伯字母
         OldNorthArabian, // 古北阿拉伯字母
         MeroiticHieroglyphs, // 麦罗埃文圣书体
+        MeroiticCursive, // 麦罗埃文草书体
     };
     Q_ENUM(AlphabetSystem)
 
@@ -96,6 +97,7 @@ private:
     QHash<QString, QString> latinToUyghur;
     QHash<QString, QString> latinToPersian;
     QHash<QString, QString> latinToOldPersian; // 古波斯文
+    QHash<QString, QString> latinToSamaritan;  // 撒玛利亚字母
     QHash<QString, QString> latinToGeorgian;
     QHash<QString, QString> latinToGeez;
     QHash<QString, QString> latinToThai;
@@ -115,11 +117,11 @@ private:
     QHash<QString, QString> latinToPhoenician; //new
     QHash<QString, QString> latinToSogdian; //new
     QHash<QString, QString> latinToTraditionalHungarian; // 传统匈牙利文
-    QHash<QString, QString> latinToFullArabic; // 完整阿拉伯字母
     QHash<QString, QString> latinToOldItalic; // 古意大利文
     QHash<QString, QString> latinToOldSouthArabian; // 古南阿拉伯字母
     QHash<QString, QString> latinToOldNorthArabian; // 古北阿拉伯字母
     QHash<QString, QString> latinToMeroiticHieroglyphs; // 麦罗埃文圣书体
+    QHash<QString, QString> latinToMeroiticCursive; // 麦罗埃文草书体
 
     // 反向映射
     QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
@@ -155,12 +157,14 @@ private:
     QHash<QString, QString> phoenicianToLatin; //new
     QHash<QString, QString> sogdianToLatin; //new
     QHash<QString, QString> traditionalHungarianToLatin; // 传统匈牙利文反向映射
-    QHash<QString, QString> fullArabicToLatin; // 完整阿拉伯字母反向映射
     QHash<QString, QString> oldPersianToLatin; // 古波斯文反向映射
     QHash<QString, QString> oldItalicToLatin; // 古意大利文反向映射
     QHash<QString, QString> oldSouthArabianToLatin; // 古南阿拉伯字母反向映射
     QHash<QString, QString> oldNorthArabianToLatin; // 古北阿拉伯字母反向映射
     QHash<QString, QString> meroiticHieroglyphsToLatin; // 麦罗埃文圣书体反向映射
+    QHash<QString, QString> samaritanToLatin;  // 撒玛利亚字母反向映射
+    QHash<QString, QString> meroiticCursiveToLatin; // 麦罗埃文草书体反向映射
+    
 };
 
 #endif // LETTERCONVERTER_H
