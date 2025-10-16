@@ -195,6 +195,14 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
         <source>Kannada</source>
         <translation>Каннада</translation>
     </message>
+    <message>
+        <source>Manchu</source>
+        <translation>Маньчжурский</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>Инуктитут</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>
@@ -376,6 +384,22 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</so
     <message>
         <source>OldNorthArabian</source>
         <translation>Древнесевероаравийский</translation>
+    </message>
+    <message>
+        <source>MeroiticHieroglyphs</source>
+        <translation>Мероитские иероглифы</translation>
+    </message>
+    <message>
+        <source>MeroiticCursive</source>
+        <translation>Мероитская скоропись</translation>
+    </message>
+    <message>
+        <source>Old Hungarian</source>
+        <translation>Древневенгерский</translation>
+    </message>
+    <message>
+        <source>Samaritan</source>
+        <translation>Самаритянский</translation>
     </message>
 </context>
 </TS>

@@ -243,6 +243,22 @@ along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</tr
         <source>OldNorthArabian</source>
         <translation>Old North Arabian</translation>
     </message>
+    <message>
+        <source>MeroiticHieroglyphs</source>
+        <translation>Meroitic Hieroglyphs</translation>
+    </message>
+    <message>
+        <source>MeroiticCursive</source>
+        <translation>Meroitic Cursive</translation>
+    </message>
+    <message>
+        <source>Old Hungarian</source>
+        <translation>Old Hungarian</translation>
+    </message>
+    <message>
+        <source>Samaritan</source>
+        <translation>Samaritan</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>

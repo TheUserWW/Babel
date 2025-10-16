@@ -13,6 +13,7 @@
 #include "aboutdialog.h"
 #include "phoneticchartdialog.h" // 添加头文件
 #include <QFontDatabase>
+#include <QCursor>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -356,18 +357,30 @@ void MainWindow::onPhoneticChartClicked()
     }
 
     try {
+        // 设置等待光标
+        QApplication::setOverrideCursor(Qt::WaitCursor);
+        
         // 创建新的对话框
         phoneticChartDialog = new PhoneticChartDialog(this);
         // 设置对话框在关闭时隐藏而不是删除
         phoneticChartDialog->setAttribute(Qt::WA_DeleteOnClose, false);
         // 显示对话框
         phoneticChartDialog->show();
+        
+        // 恢复正常光标
+        QApplication::restoreOverrideCursor();
     } catch (const std::exception& e) {
+        // 恢复正常光标
+        QApplication::restoreOverrideCursor();
+        
         // 如果创建对话框时发生异常，显示错误信息
         qCritical() << "Failed to create PhoneticChartDialog:" << e.what();
         // 确保指针为空，避免后续操作出错
         phoneticChartDialog = nullptr;
     } catch (...) {
+        // 恢复正常光标
+        QApplication::restoreOverrideCursor();
+        
         // 捕获其他未知异常
         qCritical() << "Unknown error occurred while creating PhoneticChartDialog";
         // 确保指针为空，避免后续操作出错

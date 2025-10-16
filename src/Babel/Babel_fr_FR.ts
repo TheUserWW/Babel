@@ -195,6 +195,70 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <source>Kannada</source>
         <translation>Kannada</translation>
     </message>
+    <message>
+        <source>Manchu</source>
+        <translation>Mandchou</translation>
+    </message>
+    <message>
+        <source>Inuktitut</source>
+        <translation>Inuktitut</translation>
+    </message>
+    <message>
+        <source>OldTurkic</source>
+        <translation>Vieux turc</translation>
+    </message>
+    <message>
+        <source>OldUyghur</source>
+        <translation>Vieux ouïghour</translation>
+    </message>
+    <message>
+        <source>OldItalic</source>
+        <translation>Ancien Italique</translation>
+    </message>
+    <message>
+        <source>Sogdian</source>
+        <translation>Sogdien</translation>
+    </message>
+    <message>
+        <source>Phoenician</source>
+        <translation>Phénicien</translation>
+    </message>
+    <message>
+        <source>Trad Hungarian</source>
+        <translation>Hongrois traditionnel</translation>
+    </message>
+    <message>
+        <source>OldPersian</source>
+        <translation>Vieux perse</translation>
+    </message>
+    <message>
+        <source>Full Arabic</source>
+        <translation>Arabe complet</translation>
+    </message>
+    <message>
+        <source>OldSouthArabian</source>
+        <translation>Vieux sud-arabique</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>Vieux nord-arabique</translation>
+    </message>
+    <message>
+        <source>MeroiticHieroglyphs</source>
+        <translation>Hiéroglyphes méroïtiques</translation>
+    </message>
+    <message>
+        <source>MeroiticCursive</source>
+        <translation>Cursive méroïtique</translation>
+    </message>
+    <message>
+        <source>Old Hungarian</source>
+        <translation>Vieux hongrois</translation>
+    </message>
+    <message>
+        <source>Samaritan</source>
+        <translation>Samaritain</translation>
+    </message>
 </context>
 <context>
     <name>PhoneticChartDialog</name>
@@ -334,7 +398,7 @@ avec ce programme. Si ce n'est pas le cas, consultez &lt;https://www.gnu.org/lic
         <translation>Mandchou</translation>
     </message>
     <message>
-        <source>Inuktit极</source>
+        <source>Inuktitut</source>
         <translation>Inuktitut</translation>
     </message>
     <message>

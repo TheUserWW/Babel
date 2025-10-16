@@ -155,14 +155,6 @@ junto con este programa. Si no es así, consulte &lt;https://www.gnu.org/license
         <source>Armenian</source>
         <translation>Armenio</translation>
     </message>
-        <message>
-        <source>OldSouthArabian</source>
-        <translation>Antiguo surarábigo</translation>
-    </message>
-    <message>
-        <source>OldNorthArabian</source>
-        <translation>Antiguo norarábigo</translation>
-    </message>
     <message>
         <source>Bengali</source>
         <translation>Bengalí</translation>
@@ -376,6 +368,30 @@ junto con este programa. Si no es así, consulte &lt;https://www.gnu.org/license
     <message>
         <source>Full Arabic</source>
         <translation>Árabe completo</translation>
+    </message>
+    <message>
+        <source>OldSouthArabian</source>
+        <translation>Antiguo surarábigo</translation>
+    </message>
+    <message>
+        <source>OldNorthArabian</source>
+        <translation>Antiguo norarábigo</translation>
+    </message>
+    <message>
+        <source>MeroiticHieroglyphs</source>
+        <translation>Jeroglíficos meroíticos</translation>
+    </message>
+    <message>
+        <source>MeroiticCursive</source>
+        <translation>Cursiva meroítica</translation>
+    </message>
+    <message>
+        <source>Old Hungarian</source>
+        <translation>Húngaro antiguo</translation>
+    </message>
+    <message>
+        <source>Samaritan</source>
+        <translation>Samaritano</translation>
     </message>
 </context>
 </TS>
