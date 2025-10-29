@@ -29,8 +29,7 @@ Babel is a powerful and user-friendly Qt application designed for seamless alpha
 13. Kana
 14. Zhuyin
 15. Arabic
-16. Uyghur
-    and more......
+16. and more......
 ## Usage
 1. Enter text in the input field
 2. Select the source alphabet system from the dropdown menu
