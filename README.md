@@ -56,11 +56,6 @@ The main window consists of:
 3. Select the appropriate build configuration (Debug or Release)
 4. Click the "Run" button to build and execute the application
 
-## Technical Details
-- Built with Qt 6.9.1
-- Uses QMap for storing character mappings
-- Implements internationalization (i18n) for English and Chinese
-- Supports both direct and indirect conversion between alphabet systems
 
 ## Contributing
 Contributions are welcome! If you'd like to add support for additional alphabet systems or improve the application, please feel free to submit a pull request.
