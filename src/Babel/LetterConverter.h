@@ -54,6 +54,9 @@ public:
         OldNorthArabian, // 古北阿拉伯字母
         MeroiticHieroglyphs, // 麦罗埃文圣书体
         MeroiticCursive, // 麦罗埃文草书体
+        Urdu,            // 乌尔都文
+        Dhivehi,         // 新迪维希字母 (Thaana)
+        OldDhivehi,      // 旧迪维希字母
     };
     Q_ENUM(AlphabetSystem)
 
@@ -80,6 +83,8 @@ private:
     void initializeMaps();
     bool isVowel(const QChar &c);
     QString getHebrewVowelSymbol(const QChar &c);
+    bool loadMappingsFromJson(const QString &filePath);
+    void loadMappingFromJsonObject(const QJsonObject &jsonObject, const QString &mapName, QHash<QString, QString> &targetMap);
 
     // 正向映射
     QHash<QString, QString> latinToCyrillic;  // 将QMap替换为QHash
@@ -122,6 +127,9 @@ private:
     QHash<QString, QString> latinToOldNorthArabian; // 古北阿拉伯字母
     QHash<QString, QString> latinToMeroiticHieroglyphs; // 麦罗埃文圣书体
     QHash<QString, QString> latinToMeroiticCursive; // 麦罗埃文草书体
+    QHash<QString, QString> latinToUrdu; // 乌尔都文
+    QHash<QString, QString> latinToDhivehi; // 新迪维希字母 (Thaana)
+    QHash<QString, QString> latinToOldDhivehi; // 旧迪维希字母
 
     // 反向映射
     QHash<QString, QString> pashtoToLatin;  // 将QMap替换为QHash
@@ -164,6 +172,9 @@ private:
     QHash<QString, QString> meroiticHieroglyphsToLatin; // 麦罗埃文圣书体反向映射
     QHash<QString, QString> samaritanToLatin;  // 撒玛利亚字母反向映射
     QHash<QString, QString> meroiticCursiveToLatin; // 麦罗埃文草书体反向映射
+    QHash<QString, QString> urduToLatin; // 乌尔都文反向映射
+    QHash<QString, QString> dhivehiToLatin; // 新迪维希字母反向映射
+    QHash<QString, QString> oldDhivehiToLatin; // 旧迪维希字母反向映射
     
 };
 

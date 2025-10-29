@@ -45,7 +45,8 @@ RC_FILE = logo.rc
 RC_ICON = app.ico
 
 DISTFILES += \
-    logo.rc
+    logo.rc \
+    mappings.json
 
 RESOURCES += \
     res.qrc

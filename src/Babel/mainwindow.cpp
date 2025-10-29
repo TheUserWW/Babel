@@ -160,7 +160,10 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Persian"), LetterConverter::Persian);
     ui->sourceComboBox->addItem(tr("Kurdish"), LetterConverter::Kurdish); 
     ui->sourceComboBox->addItem(tr("Pashto"), LetterConverter::Pashto); 
-    ui->sourceComboBox->addItem(tr("Ottoman"), LetterConverter::Ottoman); 
+    ui->sourceComboBox->addItem(tr("Urdu"), LetterConverter::Urdu); // 添加乌尔都文选项
+    ui->sourceComboBox->addItem(tr("Ottoman"), LetterConverter::Ottoman);
+    ui->sourceComboBox->addItem(tr("Thaana"), LetterConverter::Dhivehi);
+    ui->sourceComboBox->addItem(tr("OldThaana"), LetterConverter::OldDhivehi);
     ui->sourceComboBox->addItem(tr("Hebrew"), LetterConverter::Hebrew);
     ui->sourceComboBox->addItem(tr("Samaritan"), LetterConverter::Samaritan);  // 撒玛利亚字母
     ui->sourceComboBox->addItem(tr("Geez"), LetterConverter::Geez); 
@@ -173,6 +176,7 @@ void MainWindow::populateAlphabetComboBoxes()
     ui->sourceComboBox->addItem(tr("Manchu"), LetterConverter::Manchu);
     ui->sourceComboBox->addItem(tr("Inuktitut"), LetterConverter::Inuktitut);
     ui->sourceComboBox->addItem(tr("OldPersian"), LetterConverter::OldPersian);
+
     
 
 
