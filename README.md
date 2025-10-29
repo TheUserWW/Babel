@@ -6,7 +6,7 @@ Babel is a powerful and user-friendly Qt application designed for seamless alpha
 ## Download Link:
 https://www.softpedia.com/get/Others/Home-Education/Babel.shtml
 
-<img width="779" height="597" alt="屏幕截图 2025-10-29 183615" src="https://github.com/user-attachments/assets/c018a5c6-e8bc-407c-ab46-60887ea5f675" />
+<img width="579" height="497" alt="屏幕截图 2025-10-29 183615" src="https://github.com/user-attachments/assets/c018a5c6-e8bc-407c-ab46-60887ea5f675" />
 
 ## Features
 - **Multi-system Support**: Convert text between 16 different alphabet systems
