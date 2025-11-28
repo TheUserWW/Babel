@@ -1,3 +1,7 @@
+[![GPL v3 License](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge&logo=gnu)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?logo=paypal)](https://paypal.me/TheUserWW)
+[![GitHub all releases](https://img.shields.io/github/downloads/TheUserWW/Babel/total?logo=github&label=Downloads)](https://github.com/TheUserWW/Babel/releases)
+
 # Babel
 
 ## Download Link:
